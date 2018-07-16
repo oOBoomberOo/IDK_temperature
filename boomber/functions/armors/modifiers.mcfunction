@@ -1,0 +1,1 @@
+execute as @s if entity @s[nbt={Inventory:[{Slot:100b,tag:{boomber:{some_data:"another_value"}}}]}] run scoreboard players add @s bb.temp1 10
