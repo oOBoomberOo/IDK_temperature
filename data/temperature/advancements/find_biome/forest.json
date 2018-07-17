@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "visit_ocean": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:forest"
+            }
+        }
+    },
+	"parent": "temperature:find_biome/root",
+	"rewards": {
+        "function": "temperature:temp_calculation/biomes/forest"
+    }
+}
