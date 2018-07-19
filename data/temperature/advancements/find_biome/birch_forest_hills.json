@@ -3,12 +3,12 @@
         "visit_ocean": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:desert"
+                "biome": "minecraft:birch_forest_hills"
             }
         }
     },
 	"parent": "temperature:find_biome/root",
 	"rewards": {
-        "function": "temperature:temp_calculation/biomes/desert"
+        "function": "temperature:temp_calculation/biomes/birch_forest_hills"
     }
 }

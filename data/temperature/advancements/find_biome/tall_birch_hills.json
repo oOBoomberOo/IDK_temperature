@@ -1,14 +1,14 @@
 {
     "criteria": {
-        "visit_cold_ocean": {
+        "visit_ocean": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:cold_ocean"
+                "biome": "minecraft:tall_birch_hills"
             }
         }
     },
 	"parent": "temperature:find_biome/root",
 	"rewards": {
-        "function": "temperature:temp_calculation/biomes/cold_ocean"
+        "function": "temperature:temp_calculation/biomes/tall_birch_hills"
     }
 }

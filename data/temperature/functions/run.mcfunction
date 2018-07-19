@@ -9,7 +9,9 @@ execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]}] run title @s 
 #Run the World TempTimer
 #Note: putting '#' before fake player will not display on sidebar
 scoreboard players add #tmp.bot_timer tmp.variable 1
+scoreboard players add #tmp.bot_timer_2 tmp.variable 1
 execute if score #tmp.bot_timer tmp.variable matches 40.. run scoreboard players set #tmp.bot_timer tmp.variable 0
+execute if score #tmp.bot_timer_2 tmp.variable matches 20.. run scoreboard players set #tmp.bot_timer_2 tmp.variable 0
 
 
 #Set the score of anyone who doesn't have it

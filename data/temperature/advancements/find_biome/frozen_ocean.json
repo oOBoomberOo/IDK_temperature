@@ -3,12 +3,12 @@
         "visit_ocean": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:ocean"
+                "biome": "minecraft:frozen_ocean"
             }
         }
     },
 	"parent": "temperature:find_biome/root",
 	"rewards": {
-        "function": "temperature:temp_calculation/biomes/ocean"
+        "function": "temperature:temp_calculation/biomes/frozen_ocean"
     }
 }
