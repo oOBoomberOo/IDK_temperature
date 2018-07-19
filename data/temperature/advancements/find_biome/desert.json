@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "desert": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:desert"

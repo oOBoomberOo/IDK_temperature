@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "taiga_hills": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:taiga_hills"

@@ -1,14 +1,14 @@
 {
     "criteria": {
-        "giant_tree_taiga_hills": {
+        "the_void": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:giant_tree_taiga_hills"
+                "biome": "minecraft:the_void"
             }
         }
     },
 	"parent": "temperature:find_biome/root",
 	"rewards": {
-        "function": "temperature:temp_calculation/biomes/giant_tree_taiga_hills"
+        "function": "temperature:temp_calculation/biomes/the_void"
     }
 }

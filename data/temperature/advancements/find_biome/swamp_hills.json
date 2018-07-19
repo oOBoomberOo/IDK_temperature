@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "swamp_hills": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:swamp_hills"

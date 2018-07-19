@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "modified_wooded_badlands_plateau": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:modified_wooded_badlands_plateau"

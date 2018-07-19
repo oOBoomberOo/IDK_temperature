@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "lukewarm_ocean": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:lukewarm_ocean"

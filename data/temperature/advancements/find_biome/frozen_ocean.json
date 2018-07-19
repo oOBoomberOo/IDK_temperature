@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "frozen_ocean": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:frozen_ocean"

@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "giant_tree_taiga": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:giant_tree_taiga"

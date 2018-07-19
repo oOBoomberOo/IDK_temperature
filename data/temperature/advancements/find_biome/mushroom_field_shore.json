@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "mushroom_field_shore": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:mushroom_field_shore"

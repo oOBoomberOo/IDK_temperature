@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "plains": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:plains"

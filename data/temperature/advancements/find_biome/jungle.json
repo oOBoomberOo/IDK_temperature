@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "jungle": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:jungle"

@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "snowy_taiga": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:snowy_taiga"

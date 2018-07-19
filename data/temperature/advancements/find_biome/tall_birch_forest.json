@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "tall_birch_forest": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:tall_birch_forest"

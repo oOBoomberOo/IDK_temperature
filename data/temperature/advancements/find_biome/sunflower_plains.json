@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "sunflower_plains": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:sunflower_plains"

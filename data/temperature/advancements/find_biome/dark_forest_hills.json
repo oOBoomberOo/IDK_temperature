@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "dark_forest_hills": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:dark_forest_hills"

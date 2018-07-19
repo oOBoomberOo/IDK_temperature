@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "warm_ocean": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:warm_ocean"

@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "wooded_hills": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:wooded_hills"

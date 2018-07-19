@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "visit_ocean": {
+        "savanna_plateau": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:savanna_plateau"
