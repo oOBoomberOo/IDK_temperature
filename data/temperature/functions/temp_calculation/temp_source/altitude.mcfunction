@@ -1,4 +1,4 @@
-execute as @s[scores={tmp.altitude=0..8}] runn scoreboard players set @s tmp.totalTemp 78
+execute as @s[scores={tmp.altitude=0..8}] run scoreboard players set @s tmp.totalTemp 78
 execute as @s[scores={tmp.altitude=9..16}] run scoreboard players set @s tmp.totalTemp 75
 execute as @s[scores={tmp.altitude=17..20}] run scoreboard players set @s tmp.totalTemp 70
 execute as @s[scores={tmp.altitude=21..25}] run scoreboard players set @s tmp.totalTemp 65

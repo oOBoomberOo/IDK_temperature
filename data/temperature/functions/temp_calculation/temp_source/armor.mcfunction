@@ -6,18 +6,16 @@
 
 
 #Helmet
-execute as @s if entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:leather_helmet"}]},nbt=!{Inventory:[{Slot:103b,tag:{global:{custom_item:1b}}}]}] run scoreboard players operation @s tmp.tempArmor4 += #waiting_for_value tmp.variable
-
+execute as @s if entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:leather_helmet"}]}] run scoreboard players set @s tmp.tempArmor4 0
 
 #Chestplate
-execute as @s if entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:leather_chestplate"}]},nbt=!{Inventory:[{Slot:102b,tag:{global:{custom_item:1b}}}]}] run scoreboard players operation @s tmp.tempArmor3 += #waiting_for_value tmp.variable
-
+execute as @s if entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:leather_chestplate"}]}] run scoreboard players set @s tmp.tempArmor3 0
 
 #Leggings
-execute as @s if entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:leather_leggings"}]},nbt=!{Inventory:[{Slot:101b,tag:{global:{custom_item:1b}}}]}] run scoreboard players operation @s tmp.tempArmor2 += #waiting_for_value tmp.variable
+execute as @s if entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:leather_leggings"}]}] run scoreboard players set @s tmp.tempArmor2 0
 
 #Boots
-execute as @s if entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:leather_boot"}]},nbt=!{Inventory:[{Slot:100b,tag:{global:{custom_item:1b}}}]}] run scoreboard players operation @s tmp.tempArmor1 += #waiting_for_value tmp.variable
+execute as @s if entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:leather_boots"}]}] run scoreboard players set @s tmp.tempArmor1 0
 
 execute as @s store result score @s tmp.totalTemp run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor1
 execute as @s store result score @s tmp.totalTemp run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor2

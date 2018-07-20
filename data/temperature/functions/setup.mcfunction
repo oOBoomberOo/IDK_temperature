@@ -20,8 +20,15 @@ scoreboard objectives add tmp.altitudeTemp dummy
 scoreboard objectives add tmp.playerAlt dummy
 scoreboard objectives add tmp.stayInBiome dummy
 scoreboard objectives add tmp.stayInSun dummy
+scoreboard objectives add tmp.stayInWater dummy
 scoreboard objectives add tmp.dimension dummy
 scoreboard objectives add tmp.sunlightHeat dummy
+scoreboard objectives add tmp.heatTime dummy
+scoreboard objectives add tmp.coldTime dummy
+scoreboard objectives add tmp.wetnessTemp dummy
+scoreboard objectives add tmp.wetnessTime dummy
+scoreboard objectives add tmp.wetnessAmt dummy
+function temperature:temp_calculation/scoreboard
 
 
 #2 Set the scores
@@ -33,6 +40,7 @@ scoreboard players set #normal tmp.variable 0
 scoreboard players set #cool tmp.variable -1
 scoreboard players set #cold tmp.variable -2
 scoreboard players set #freezing tmp.variable -3
+scoreboard players set #second tmp.variable 20
 
 gamerule commandBlockOutput false
 gamerule logAdminCommands false

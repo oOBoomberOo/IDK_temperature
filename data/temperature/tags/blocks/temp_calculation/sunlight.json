@@ -2,6 +2,9 @@
 	"values": [
 		"minecraft:air",
 		"minecraft:glass",
-		"minecraft:vine"
+		"#temperature:temp_calculation/stained_glass",
+		"#temperature:temp_calculation/stained_glass_pane",
+		"minecraft:vine",
+		"minecraft:cocoa"
 	]
 }

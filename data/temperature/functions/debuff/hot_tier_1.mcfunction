@@ -1,1 +1,0 @@
-effect give @p minecraft:slowness 90 0 true
