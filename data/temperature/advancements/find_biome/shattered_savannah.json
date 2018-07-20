@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "shattered_savannah": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:shattered_savannah"
+            }
+        }
+    },
+	"parent": "temperature:find_biome/root",
+	"rewards": {
+        "function": "temperature:temp_calculation/biomes/shattered_savannah"
+    }
+}

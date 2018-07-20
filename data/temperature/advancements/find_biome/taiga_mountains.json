@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "taiga_mountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:taiga_mountains"
+            }
+        }
+    },
+	"parent": "temperature:find_biome/root",
+	"rewards": {
+        "function": "temperature:temp_calculation/biomes/taiga_mountains"
+    }
+}

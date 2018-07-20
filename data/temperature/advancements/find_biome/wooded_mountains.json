@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "wooded_mountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:wooded_mountains"
+            }
+        }
+    },
+	"parent": "temperature:find_biome/root",
+	"rewards": {
+        "function": "temperature:temp_calculation/biomes/wooded_mountains"
+    }
+}

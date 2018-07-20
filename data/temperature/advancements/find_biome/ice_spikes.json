@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "ice_spikes": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:ice_spikes"
+            }
+        }
+    },
+	"parent": "temperature:find_biome/root",
+	"rewards": {
+        "function": "temperature:temp_calculation/biomes/ice_spikes"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "snowy_taiga_mountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_taiga_mountains"
+            }
+        }
+    },
+	"parent": "temperature:find_biome/root",
+	"rewards": {
+        "function": "temperature:temp_calculation/biomes/snowy_taiga_mountains"
+    }
+}

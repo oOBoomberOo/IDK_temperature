@@ -10,6 +10,7 @@ execute if score #currentTime tmp.variable matches 10000..12000 run scoreboard p
 execute if score #currentTime tmp.variable matches 12000..14000 run scoreboard players set @s tmp.tempBiome 16
 execute if score #currentTime tmp.variable matches 14000..16000 run scoreboard players set @s tmp.tempBiome 14
 execute if score #currentTime tmp.variable matches 16000..18000 run scoreboard players set @s tmp.tempBiome 10
-scoreboard players set @s tmp.biomeID 0
+scoreboard players set @s tmp.spBiome 42
+scoreboard players set @s tmp.stayInBiome 0
 
 advancement revoke @s from temperature:find_biome/root

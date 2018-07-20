@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "nether": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:nether"
+            }
+        }
+    },
+	"parent": "temperature:find_biome/root",
+	"rewards": {
+        "function": "temperature:temp_calculation/biomes/nether"
+    }
+}

@@ -3,7 +3,8 @@ tellraw @a {"text":"Successfully loaded: ","color":"yellow","extra":[{"text":"Cl
 #1 make the scores
 scoreboard objectives add tmp.playerTemp dummy
 scoreboard objectives add tmp.totalTemp dummy
-#scoreboard objectives add tmp.playerTimer dummy
+scoreboard objectives add tmp.calTotalTemp dummy
+scoreboard objectives add tmp.resultTemp dummy
 
 
 #Temperature stuff
@@ -14,10 +15,16 @@ scoreboard objectives add tmp.tempArmor1 dummy
 scoreboard objectives add tmp.tempArmor2 dummy
 scoreboard objectives add tmp.tempArmor3 dummy
 scoreboard objectives add tmp.tempArmor4 dummy
+scoreboard objectives add tmp.altitude dummy
+scoreboard objectives add tmp.altitudeTemp dummy
+scoreboard objectives add tmp.playerAlt dummy
+scoreboard objectives add tmp.stayInBiome dummy
+scoreboard objectives add tmp.stayInSun dummy
+scoreboard objectives add tmp.dimension dummy
+scoreboard objectives add tmp.sunlightHeat dummy
 
 
 #2 Set the scores
-scoreboard players set @a tmp.playerTemp 50
 
 scoreboard players set #melting tmp.variable 3
 scoreboard players set #hot tmp.variable 2

@@ -7,7 +7,7 @@ execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]}] run title @s 
 
 
 #Set the score of anyone who doesn't have it
-execute as @a unless score @s tmp.playerTemp matches -110.. run scoreboard players set @s tmp.playerTemp 50
+execute as @a unless score @s tmp.playerTemp matches -100.. run scoreboard players set @s tmp.playerTemp 50
 
 #Can't find any score involve playerTimer aka 'int tmp.playerTimer is never used'
 execute as @a unless score @s tmp.playerTimer matches -1.. run scoreboard players set @s tmp.playerTimer 50
