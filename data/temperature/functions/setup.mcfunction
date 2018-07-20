@@ -10,6 +10,7 @@ scoreboard objectives add tmp.resultTemp dummy
 #Temperature stuff
 scoreboard objectives add tmp.tempBiome dummy
 scoreboard objectives add tmp.spBiome dummy
+scoreboard objectives add tmp.humidity dummy
 scoreboard objectives add tmp.variable dummy
 scoreboard objectives add tmp.tempArmor1 dummy
 scoreboard objectives add tmp.tempArmor2 dummy

@@ -5,11 +5,17 @@ execute as @s store result score @s tmp.resultTemp run scoreboard players operat
 
 #Split everything for better performance
 scoreboard players add #tmp.bot_timer tmp.variable 1
-execute as @s if score #tmp.bot_timer tmp.variable matches 40.. if score @s tmp.resultTemp matches -14..14 run function temperature:player/temperature
-execute as @s if score #tmp.bot_timer tmp.variable matches 20.. if score @s tmp.resultTemp matches 15..29 run function temperature:player/temperature
-execute as @s if score #tmp.bot_timer tmp.variable matches 20.. if score @s tmp.resultTemp matches -29..-15 run function temperature:player/temperature
-execute as @s if score #tmp.bot_timer tmp.variable matches 10.. if score @s tmp.resultTemp matches 30.. run function temperature:player/temperature
-execute as @s if score #tmp.bot_timer tmp.variable matches 10.. if score @s tmp.resultTemp matches ..-30 run function temperature:player/temperature
+execute as @s[scores={tmp.wetnessTime=..0}] if score #tmp.bot_timer tmp.variable matches 40.. if score @s tmp.resultTemp matches -14..14 run function temperature:player/temperature
+execute as @s[scores={tmp.wetnessTime=..0}] if score #tmp.bot_timer tmp.variable matches 20.. if score @s tmp.resultTemp matches 15..29 run function temperature:player/temperature
+execute as @s[scores={tmp.wetnessTime=..0}] if score #tmp.bot_timer tmp.variable matches 20.. if score @s tmp.resultTemp matches -29..-15 run function temperature:player/temperature
+execute as @s[scores={tmp.wetnessTime=..0}] if score #tmp.bot_timer tmp.variable matches 10.. if score @s tmp.resultTemp matches 30.. run function temperature:player/temperature
+execute as @s[scores={tmp.wetnessTime=..0}] if score #tmp.bot_timer tmp.variable matches 10.. if score @s tmp.resultTemp matches ..-30 run function temperature:player/temperature
+
+execute as @s[scores={tmp.wetnessTime=1..}] if score #tmp.bot_timer tmp.variable matches 60.. if score @s tmp.resultTemp matches -14..14 run function temperature:player/temperature
+execute as @s[scores={tmp.wetnessTime=1..}] if score #tmp.bot_timer tmp.variable matches 40.. if score @s tmp.resultTemp matches 15..29 run function temperature:player/temperature
+execute as @s[scores={tmp.wetnessTime=1..}] if score #tmp.bot_timer tmp.variable matches 40.. if score @s tmp.resultTemp matches -29..-15 run function temperature:player/temperature
+execute as @s[scores={tmp.wetnessTime=1..}] if score #tmp.bot_timer tmp.variable matches 30.. if score @s tmp.resultTemp matches 30.. run function temperature:player/temperature
+execute as @s[scores={tmp.wetnessTime=1..}] if score #tmp.bot_timer tmp.variable matches 30.. if score @s tmp.resultTemp matches ..-30 run function temperature:player/temperature
 
 #Clock, Thermometer?
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=..-1}] run title @s actionbar ["",{"text":"Your temperature is","color":"light_gray"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"white"}]

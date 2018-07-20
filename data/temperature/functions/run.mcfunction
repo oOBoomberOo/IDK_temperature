@@ -10,6 +10,7 @@ execute as @a unless score @s tmp.playerTemp matches -100.. run scoreboard playe
 execute as @a unless score @s tmp.heatTime matches 0.. run scoreboard players set @s tmp.heatTime 0
 execute as @a unless score @s tmp.coldTime matches 0.. run scoreboard players set @s tmp.coldTime 0
 execute as @a unless score @s tmp.stayInWater matches 0.. run scoreboard players set @s tmp.stayInWater 0
+execute as @a unless score @s tmp.stayInSun matches 0.. run scoreboard players set @s tmp.stayInSun 0
 
 #Can't find any score involve playerTimer aka 'int tmp.playerTimer is never used'
 execute as @a unless score @s tmp.playerTimer matches -1.. run scoreboard players set @s tmp.playerTimer 50
