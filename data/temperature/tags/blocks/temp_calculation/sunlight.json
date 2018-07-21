@@ -2,9 +2,19 @@
 	"values": [
 		"minecraft:air",
 		"minecraft:glass",
+		"minecraft:glass_pane",
 		"#temperature:temp_calculation/stained_glass",
 		"#temperature:temp_calculation/stained_glass_pane",
 		"minecraft:vine",
-		"minecraft:cocoa"
+		"minecraft:cocoa",
+		"minecraft:ladder",
+		"minecraft:sugar_cane",
+		"minecraft:rails",
+		"minecraft:tall_grass",
+		"minecraft:large_fern",
+		"minecraft:sunflower",
+		"minecraft:rose_bush",
+		"minecraft:lilac",
+		"minecraft:peony"
 	]
 }

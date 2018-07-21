@@ -11,5 +11,6 @@ execute as @s run function temperature:temp_calculation/temp_source/metal_armor
 execute as @s run function temperature:temp_calculation/temp_source/armor_modifier
 execute as @s run function temperature:temp_calculation/temp_source/water
 execute as @s run function temperature:temp_calculation/temp_source/consumable
+execute as @s run function temperature:temp_calculation/temp_source/on_fire
 
 execute as @s run function temperature:temp_calculation/temp_source/player_heat

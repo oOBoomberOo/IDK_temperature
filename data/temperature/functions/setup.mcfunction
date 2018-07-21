@@ -30,6 +30,8 @@ scoreboard objectives add tmp.wetnessTemp dummy
 scoreboard objectives add tmp.wetnessTime dummy
 scoreboard objectives add tmp.wetnessAmt dummy
 scoreboard objectives add tmp.tempBlock dummy
+scoreboard objectives add tmp.fireTime dummy
+scoreboard objectives add tmp.tempFire dummy
 function temperature:temp_calculation/scoreboard
 
 
