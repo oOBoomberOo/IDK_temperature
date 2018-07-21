@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "shattered_savanna": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:shattered_savanna"
+            }
+        }
+    },
+	"parent": "temperature:find_biome/root",
+	"rewards": {
+        "function": "temperature:temp_calculation/biomes/shattered_savanna"
+    }
+}

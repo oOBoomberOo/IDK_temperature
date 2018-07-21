@@ -5,29 +5,24 @@ execute as @s store result score @s tmp.resultTemp run scoreboard players operat
 
 #Split everything for better performance
 scoreboard players add #tmp.bot_timer tmp.variable 1
-execute as @s[scores={tmp.wetnessTime=..0}] if score #tmp.bot_timer tmp.variable matches 40.. if score @s tmp.resultTemp matches -14..14 run function temperature:player/temperature
-execute as @s[scores={tmp.wetnessTime=..0}] if score #tmp.bot_timer tmp.variable matches 20.. if score @s tmp.resultTemp matches 15..29 run function temperature:player/temperature
-execute as @s[scores={tmp.wetnessTime=..0}] if score #tmp.bot_timer tmp.variable matches 20.. if score @s tmp.resultTemp matches -29..-15 run function temperature:player/temperature
-execute as @s[scores={tmp.wetnessTime=..0}] if score #tmp.bot_timer tmp.variable matches 10.. if score @s tmp.resultTemp matches 30.. run function temperature:player/temperature
-execute as @s[scores={tmp.wetnessTime=..0}] if score #tmp.bot_timer tmp.variable matches 10.. if score @s tmp.resultTemp matches ..-30 run function temperature:player/temperature
-
-execute as @s[scores={tmp.wetnessTime=1..}] if score #tmp.bot_timer tmp.variable matches 60.. if score @s tmp.resultTemp matches -14..14 run function temperature:player/temperature
-execute as @s[scores={tmp.wetnessTime=1..}] if score #tmp.bot_timer tmp.variable matches 40.. if score @s tmp.resultTemp matches 15..29 run function temperature:player/temperature
-execute as @s[scores={tmp.wetnessTime=1..}] if score #tmp.bot_timer tmp.variable matches 40.. if score @s tmp.resultTemp matches -29..-15 run function temperature:player/temperature
-execute as @s[scores={tmp.wetnessTime=1..}] if score #tmp.bot_timer tmp.variable matches 30.. if score @s tmp.resultTemp matches 30.. run function temperature:player/temperature
-execute as @s[scores={tmp.wetnessTime=1..}] if score #tmp.bot_timer tmp.variable matches 30.. if score @s tmp.resultTemp matches ..-30 run function temperature:player/temperature
+execute as @s run function temperature:player/temperature_speed
 
 #Clock, Thermometer?
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=..-1}] run title @s actionbar ["",{"text":"Your temperature is","color":"light_gray"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"white"}]
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=0..15}] run title @s actionbar ["",{"text":"Your temperature is","color":"light_gray"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"light_blue"}]
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=16..25}] run title @s actionbar ["",{"text":"Your temperature is","color":"light_gray"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"blue"}]
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=26..74}] run title @s actionbar ["",{"text":"Your temperature is","color":"light_gray"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"green"}]
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=75..100}] run title @s actionbar ["",{"text":"Your temperature is","color":"light_gray"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"yellow"}]
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=100..115}] run title @s actionbar ["",{"text":"Your temperature is","color":"light_gray"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"red"}]
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=116..}] run title @s actionbar ["",{"text":"Your temperature is","color":"light_gray"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"dark_red"}]
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=..-1}] run title @s actionbar ["",{"text":"Your temperature is","color":"white"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"white"}]
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=0..15}] run title @s actionbar ["",{"text":"Your temperature is","color":"white"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"blue"}]
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=16..25}] run title @s actionbar ["",{"text":"Your temperature is","color":"white"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"dark_blue"}]
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=26..74}] run title @s actionbar ["",{"text":"Your temperature is","color":"white"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"green"}]
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=75..100}] run title @s actionbar ["",{"text":"Your temperature is","color":"white"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"yellow"}]
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=100..115}] run title @s actionbar ["",{"text":"Your temperature is","color":"white"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"red"}]
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.totalTemp=116..}] run title @s actionbar ["",{"text":"Your temperature is","color":"white"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"dark_red"}]
 
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock",tag:{boomber:{temperature:{id:"debug"}}}}]}] run title @s actionbar ["",{"text":"Your temperature is","color":"white"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"green"},{"text":" / ","color":"gray"},{"score":{"name":"@s","objective":"tmp.totalTemp"},"color":"red"}]
+
+execute as @s[scores={tmp.wetnessTime=1..}] at @s anchored eyes positioned ~ ~ ~ run function temperature:player/wetness
 
 #Reached Hot Tier 1
-execute as @s[scores={tmp.heatTime=4800..,tmp.playerTemp=78..}] run function temperature:debuff/hot/1
-execute as @s[scores={tmp.playerTemp=85..}] run function temperature:debuff/hot/2
-execute as @s[scores={tmp.playerTemp=92..}] run function temperature:debuff/hot/3
+execute as @s[scores={tmp.heatTime=3600..,tmp.playerTemp=78..}] run function temperature:debuff/hot/soft/1
+execute as @s[scores={tmp.heatTime=2400..,tmp.playerTemp=94..}] run function temperature:debuff/hot/soft/2
+execute as @s[scores={tmp.heatTime=2400..,tmp.playerTemp=100..}] run function temperature:debuff/hot/soft/3
+
+execute as @s[scores={tmp.playerTemp=85..}] run function temperature:debuff/hot/instant/1

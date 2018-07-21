@@ -1,1 +1,0 @@
-effect give @s slowness 5 1 true

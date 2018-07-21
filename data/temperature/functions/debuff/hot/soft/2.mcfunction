@@ -1,0 +1,1 @@
+effect give @s blindness 5 0 false

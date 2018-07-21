@@ -1,16 +1,17 @@
 {
 	"criteria": {
-		"potion": {
+		"water_bottle": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"item": "minecraft:potion"
+					"item": "minecraft:potion",
+					"potion": "minecraft:water"
 				}
 			}
 		}
 	},
 	"parent": "temperature:consumable/root",
 	"rewards": {
-		"function": "temperature:temp_calculation/consumable/water/potion"
+		"function": "temperature:temp_calculation/consumable/water/water_bottle"
 	}
 }

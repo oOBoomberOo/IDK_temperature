@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "small_end_islands": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:small_end_islands"
+            }
+        }
+    },
+	"parent": "temperature:find_biome/root",
+	"rewards": {
+        "function": "temperature:temp_calculation/biomes/small_end_islands"
+    }
+}

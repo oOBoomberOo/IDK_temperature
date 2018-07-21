@@ -29,18 +29,12 @@ scoreboard objectives add tmp.coldTime dummy
 scoreboard objectives add tmp.wetnessTemp dummy
 scoreboard objectives add tmp.wetnessTime dummy
 scoreboard objectives add tmp.wetnessAmt dummy
+scoreboard objectives add tmp.tempBlock dummy
 function temperature:temp_calculation/scoreboard
 
 
 #2 Set the scores
 
-scoreboard players set #melting tmp.variable 3
-scoreboard players set #hot tmp.variable 2
-scoreboard players set #warm tmp.variable 1
-scoreboard players set #normal tmp.variable 0
-scoreboard players set #cool tmp.variable -1
-scoreboard players set #cold tmp.variable -2
-scoreboard players set #freezing tmp.variable -3
 scoreboard players set #second tmp.variable 20
 
 gamerule commandBlockOutput false
