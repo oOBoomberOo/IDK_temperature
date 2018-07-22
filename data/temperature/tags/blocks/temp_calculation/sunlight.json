@@ -9,12 +9,19 @@
 		"minecraft:cocoa",
 		"minecraft:ladder",
 		"minecraft:sugar_cane",
-		"minecraft:rails",
 		"minecraft:tall_grass",
 		"minecraft:large_fern",
 		"minecraft:sunflower",
 		"minecraft:rose_bush",
 		"minecraft:lilac",
-		"minecraft:peony"
+		"minecraft:peony",
+		"minecraft:torch",
+		"minecraft:wall_torch",
+		"minecraft:redstone_torch",
+		"minecraft:redstone_wall_torch",
+		"minecraft:sign",
+		"minecraft:wall_sign",
+		"#minecraft:banners",
+		"minecraft:end_rod"
 	]
 }

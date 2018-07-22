@@ -342,5 +342,7 @@ execute as @s if block ~3 ~3 ~1 minecraft:fire run tag @s add tmp.block.fire
 execute as @s if block ~3 ~3 ~2 minecraft:fire run tag @s add tmp.block.fire
 execute as @s if block ~3 ~3 ~3 minecraft:fire run tag @s add tmp.block.fire
 
-execute as @s[tag=tmp.block.fire] run scoreboard players add @s tmp.tempBlock 10
+execute as @s[tag=tmp.block.fire] run scoreboard players set @s tmp.blockTmp 10
+execute as @s[tag=tmp.block.fire] run scoreboard players operation @s tmp.tempBlock += @s tmp.blockTmp
+scoreboard players set @s tmp.blockTmp 0
 tag @s remove tmp.block.fire
