@@ -1,0 +1,17 @@
+{
+	"display": {
+		"title": "Chuckchuk",
+		"description": "",
+		"icon": {
+			"item": "minecraft:orange_dye"
+		},
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"parent": "temperature:temperature/temperature"
+}

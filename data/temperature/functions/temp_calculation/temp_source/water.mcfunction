@@ -1,10 +1,12 @@
-
+#Detect if player is in water type block then increase tmp.stayInWater
 execute as @s[scores={tmp.stayInWater=..24000}] at @s if block ~ ~ ~ water[level=0] run scoreboard players add @s tmp.stayInWater 1
 execute as @s[scores={tmp.stayInWater=..24000}] at @s if block ~ ~ ~ cauldron[level=3] run scoreboard players add @s tmp.stayInWater 1
 execute as @s[scores={tmp.stayInWater=..24000}] at @s if block ~ ~ ~ cauldron[level=2] run scoreboard players add @s tmp.stayInWater 1
 execute as @s[scores={tmp.stayInWater=..24000}] at @s if block ~ ~ ~ cauldron[level=1] run scoreboard players add @s tmp.stayInWater 1
-execute as @s[scores={tmp.stayInWater=100..}] at @s anchored feet positioned ~ ~ ~ if block ~ ~ ~ water[level=0] unless block ~ ~1 ~ water[level=0] run function temperature:temp_calculation/temp_source/water/water_half
-execute as @s[scores={tmp.stayInWater=100..}] at @s anchored feet positioned ~ ~ ~ if block ~ ~ ~ water[level=0] if block ~ ~1 ~ water[level=0] run function temperature:temp_calculation/temp_source/water/water_full
+
+#Run corresponding function depend on the type of block
+execute as @s[scores={tmp.stayInWater=100..}] at @s positioned ~ ~-0.3 ~ if block ~ ~ ~ water[level=0] unless block ~ ~1 ~ water[level=0] run function temperature:temp_calculation/temp_source/water/water_half
+execute as @s[scores={tmp.stayInWater=100..}] at @s positioned ~ ~-0.3 ~ if block ~ ~ ~ water[level=0] if block ~ ~1 ~ water[level=0] run function temperature:temp_calculation/temp_source/water/water_full
 execute as @s[scores={tmp.stayInWater=100..,tmp.wetnessTime=..0}] at @s if block ~ ~ ~ cauldron[level=3] run function temperature:temp_calculation/temp_source/water/cauldron
 execute as @s[scores={tmp.stayInWater=100..,tmp.wetnessTime=..0}] at @s if block ~ ~ ~ cauldron[level=2] run function temperature:temp_calculation/temp_source/water/cauldron
 execute as @s[scores={tmp.stayInWater=100..,tmp.wetnessTime=..0}] at @s if block ~ ~ ~ cauldron[level=1] run function temperature:temp_calculation/temp_source/water/cauldron

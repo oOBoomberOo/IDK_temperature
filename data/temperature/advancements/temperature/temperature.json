@@ -1,0 +1,17 @@
+{
+	"display": {
+		"title": "Climate & Temperature",
+		"description": "By SedarGames, Chuckchuk, TheSaltyPug and Boomber",
+		"icon": {
+			"item": "minecraft:clock"
+		},
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"parent": "global:root"
+}

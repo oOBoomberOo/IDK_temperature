@@ -4,4 +4,4 @@ execute as @s[scores={tmp.altitude=..255}] unless block ~ ~1 ~ #temperature:temp
 execute as @s[nbt=!{Dimension:0}] run tag @s add tmp.altitude.no_direct_sunlight
 execute as @s[nbt={Inventory:[{Slot:103b,id:"minecraft:leather_helmet"}]}] run tag @s add tmp.altitude.no_direct_sunlight
 execute as @s[nbt={Inventory:[{Slot:103b,id:"minecraft:turtle_helmet"}]}] run tag @s add tmp.altitude.no_direct_sunlight
-execute as @s[nbt={Inventory:[{Slot:103b,id:"minecraft:chain_helmet"}]}] run tag @s add tmp.altitude.no_direct_sunlight
+execute as @s[nbt={Inventory:[{Slot:103b,id:"minecraft:chainmail_helmet"}]}] run tag @s add tmp.altitude.no_direct_sunlight

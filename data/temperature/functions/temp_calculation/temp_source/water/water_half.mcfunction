@@ -7,3 +7,4 @@ execute as @s[scores={tmp.humidity=5}] run scoreboard players add @s tmp.wetness
 scoreboard players operation @s tmp.wetnessAmt < @s tmp.wetnessTemp
 scoreboard players set @s tmp.wetnessTime 20
 scoreboard players operation @s tmp.wetnessTime *= #second tmp.variable
+scoreboard players set @s tmp.stayInWater 0

@@ -18,7 +18,7 @@ execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock"}]},scores={tmp.to
 
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock",tag:{boomber:{temperature:{id:"debug"}}}}]}] run title @s actionbar ["",{"text":"Your temperature is","color":"white"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"green"},{"text":" / ","color":"gray"},{"score":{"name":"@s","objective":"tmp.totalTemp"},"color":"red"}]
 
-execute as @s[scores={tmp.wetnessTime=1..}] at @s anchored eyes positioned ~ ~ ~ run function temperature:player/wetness
+execute as @s at @s anchored eyes positioned ~ ~ ~ run function temperature:player/effect
 
 #Reached Hot Tier 1
 execute as @s[scores={tmp.heatTime=3600..,tmp.playerTemp=78..}] run function temperature:debuff/hot/soft/1
