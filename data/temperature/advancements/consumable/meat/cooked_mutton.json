@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"cooked_mutton": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_mutton"
+				}
+			}
+		}
+	},
+	"parent": "temperature:consumable/root",
+	"rewards": {
+		"function": "temperature:temp_calculation/consumable/meat/cooked_mutton"
+	}
+}

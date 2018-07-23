@@ -9,11 +9,17 @@
 execute as @s if entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:iron_helmet"}]}] if score @s tmp.totalTemp matches 50.. run scoreboard players set @s tmp.tempArmor4 4
 execute as @s if entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:iron_helmet"}]}] if score @s tmp.totalTemp matches ..49 run scoreboard players set @s tmp.tempArmor4 -4
 
+execute as @s if entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] if score @s tmp.totalTemp matches 50.. run scoreboard players set @s tmp.tempArmor4 3
+execute as @s if entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] if score @s tmp.totalTemp matches ..49 run scoreboard players set @s tmp.tempArmor4 -1
+
 
 
 #Chestplate
 execute as @s if entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:iron_chestplate"}]}] if score @s tmp.totalTemp matches 50.. run scoreboard players set @s tmp.tempArmor3 12
 execute as @s if entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:iron_chestplate"}]}] if score @s tmp.totalTemp matches ..49 run scoreboard players set @s tmp.tempArmor3 -12
+
+execute as @s if entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:diamond_chestplate"}]}] if score @s tmp.totalTemp matches 50.. run scoreboard players set @s tmp.tempArmor3 10
+execute as @s if entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:diamond_chestplate"}]}] if score @s tmp.totalTemp matches ..49 run scoreboard players set @s tmp.tempArmor3 -6
 
 
 
@@ -21,11 +27,17 @@ execute as @s if entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:iron_chestpl
 execute as @s if entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:iron_leggings"}]}] if score @s tmp.totalTemp matches 50.. run scoreboard players set @s tmp.tempArmor2 9
 execute as @s if entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:iron_leggings"}]}] if score @s tmp.totalTemp matches ..49 run scoreboard players set @s tmp.tempArmor2 -9
 
+execute as @s if entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:diamond_leggings"}]}] if score @s tmp.totalTemp matches 50.. run scoreboard players set @s tmp.tempArmor2 8
+execute as @s if entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:diamond_leggings"}]}] if score @s tmp.totalTemp matches ..49 run scoreboard players set @s tmp.tempArmor2 -4
+
 
 
 #Boots
 execute as @s if entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:iron_boots"}]}] if score @s tmp.totalTemp matches 50.. run scoreboard players set @s tmp.tempArmor1 3
 execute as @s if entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:iron_boots"}]}] if score @s tmp.totalTemp matches ..49 run scoreboard players set @s tmp.tempArmor1 -3
+
+execute as @s if entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:diamond_boots"}]}] if score @s tmp.totalTemp matches 50.. run scoreboard players set @s tmp.tempArmor1 3
+execute as @s if entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:diamond_boots"}]}] if score @s tmp.totalTemp matches ..49 run scoreboard players set @s tmp.tempArmor1 -1
 
 
 

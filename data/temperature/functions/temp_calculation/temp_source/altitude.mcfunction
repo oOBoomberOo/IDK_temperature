@@ -34,7 +34,7 @@ execute as @s[scores={tmp.playerAlt=75..82}] run scoreboard players set @s tmp.a
 execute as @s[scores={tmp.playerAlt=83..92}] run scoreboard players set @s tmp.altitudeTemp -2
 execute as @s[scores={tmp.playerAlt=93..100}] run scoreboard players set @s tmp.altitudeTemp -3
 execute as @s[scores={tmp.playerAlt=101..106}] run scoreboard players set @s tmp.altitudeTemp -4
-execute as @s[scores={tmp.playerAlt=106..112}] run scoreboard players set @s tmp.altitudeTemp -5
+execute as @s[scores={tmp.playerAlt=107..112}] run scoreboard players set @s tmp.altitudeTemp -5
 execute as @s[scores={tmp.playerAlt=113..117}] run scoreboard players set @s tmp.altitudeTemp -6
 execute as @s[scores={tmp.playerAlt=118..121}] run scoreboard players set @s tmp.altitudeTemp -7
 execute as @s[scores={tmp.playerAlt=122..130}] run scoreboard players set @s tmp.altitudeTemp -8
@@ -43,5 +43,11 @@ execute as @s[scores={tmp.playerAlt=140..160}] run scoreboard players set @s tmp
 execute as @s[scores={tmp.playerAlt=161..180}] run scoreboard players set @s tmp.altitudeTemp -11
 execute as @s[scores={tmp.playerAlt=181..190}] run scoreboard players set @s tmp.altitudeTemp -12
 execute as @s[scores={tmp.playerAlt=191..200}] run scoreboard players set @s tmp.altitudeTemp -13
+execute as @s[scores={tmp.playerAlt=201..215}] run scoreboard players set @s tmp.altitudeTemp -14
+execute as @s[scores={tmp.playerAlt=216..225}] run scoreboard players set @s tmp.altitudeTemp -15
+execute as @s[scores={tmp.playerAlt=226..235}] run scoreboard players set @s tmp.altitudeTemp -16
+execute as @s[scores={tmp.playerAlt=236..245}] run scoreboard players set @s tmp.altitudeTemp -17
+execute as @s[scores={tmp.playerAlt=246..255}] run scoreboard players set @s tmp.altitudeTemp -18
+execute as @s[scores={tmp.playerAlt=256..}] run scoreboard players set @s tmp.altitudeTemp -20
 
 execute as @s run scoreboard players operation @s tmp.totalTemp += @s tmp.altitudeTemp

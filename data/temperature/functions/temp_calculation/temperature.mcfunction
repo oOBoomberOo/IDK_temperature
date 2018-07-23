@@ -8,9 +8,11 @@ execute as @s[nbt={Dimension:0}] run function temperature:temp_calculation/temp_
 execute as @s run function temperature:temp_calculation/temp_source/block
 execute as @s run function temperature:temp_calculation/temp_source/armor
 execute as @s run function temperature:temp_calculation/temp_source/metal_armor
+execute as @s run function temperature:temp_calculation/temp_source/sp_armor
 execute as @s run function temperature:temp_calculation/temp_source/armor_modifier
 execute as @s run function temperature:temp_calculation/temp_source/water
 execute as @s run function temperature:temp_calculation/temp_source/consumable
 execute as @s run function temperature:temp_calculation/temp_source/on_fire
-
-execute as @s run function temperature:temp_calculation/temp_source/player_heat
+execute as @s run function temperature:temp_calculation/temp_source/debuff_mode
+execute as @s run function temperature:temp_calculation/temp_source/player
+execute as @s run function temperature:debuff/debuff

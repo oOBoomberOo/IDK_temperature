@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"cooked_chicken": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_chicken"
+				}
+			}
+		}
+	},
+	"parent": "temperature:consumable/root",
+	"rewards": {
+		"function": "temperature:temp_calculation/consumable/meat/cooked_chicken"
+	}
+}

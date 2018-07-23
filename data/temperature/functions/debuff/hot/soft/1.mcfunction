@@ -1,4 +1,4 @@
 effect give @s slowness 60 0 true
-scoreboard players add #debuff.soft.1 tmp.variable 1
-execute if score #debuff.soft.1 tmp.variable matches 400.. run effect give @s nausea 6 0 true
-execute if score #debuff.soft.1 tmp.variable matches 400.. run scoreboard players set #debuff.soft.1 tmp.variable 0
+scoreboard players add @s tmp.debuffTime 1
+execute as @s[scores={tmp.debuffTime=400..}] run effect give @s nausea 6 0 true
+execute as @s[scores={tmp.debuffTime=400..}] run scoreboard players set @s tmp.debuffTime 0

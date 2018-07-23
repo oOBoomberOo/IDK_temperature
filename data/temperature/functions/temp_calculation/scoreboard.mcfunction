@@ -4,3 +4,12 @@ scoreboard objectives add tmp.waterTime dummy
 scoreboard objectives add tmp.soupAmt dummy
 scoreboard objectives add tmp.soupTemp dummy
 scoreboard objectives add tmp.soupTime dummy
+scoreboard objectives add tmp.g_appleAmt dummy
+scoreboard objectives add tmp.g_appleTemp dummy
+scoreboard objectives add tmp.g_appleTime dummy
+scoreboard objectives add tmp.g_carrotAmt dummy
+scoreboard objectives add tmp.g_carrotTemp dummy
+scoreboard objectives add tmp.g_carrotTime dummy
+scoreboard objectives add tmp.meatAmt dummy
+scoreboard objectives add tmp.meatTemp dummy
+scoreboard objectives add tmp.meatTime dummy

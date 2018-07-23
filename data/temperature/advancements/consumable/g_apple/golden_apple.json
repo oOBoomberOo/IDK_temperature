@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"golden_apple": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:golden_apple"
+				}
+			}
+		}
+	},
+	"parent": "temperature:consumable/root",
+	"rewards": {
+		"function": "temperature:temp_calculation/consumable/g_apple/golden_apple"
+	}
+}
