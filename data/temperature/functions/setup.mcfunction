@@ -3,6 +3,7 @@ tellraw @a {"text":"Successfully loaded: ","color":"yellow","extra":[{"text":"Cl
 #Objective
 scoreboard objectives add tmp.playerTemp dummy
 scoreboard objectives add tmp.totalTemp dummy
+scoreboard objectives add tmp.tempSpeed dummy
 scoreboard objectives add tmp.calTotalTemp dummy
 scoreboard objectives add tmp.resultTemp dummy
 scoreboard objectives add tmp.debuffTime dummy

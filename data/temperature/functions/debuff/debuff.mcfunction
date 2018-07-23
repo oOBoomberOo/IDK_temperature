@@ -16,13 +16,13 @@ execute as @s[scores={tmp.coldTime=1200..,tmp.debuffMode=6,tmp.playerTemp=..5}] 
 execute as @s[scores={tmp.coldTime=1200..,tmp.debuffMode=7,tmp.playerTemp=..0}] run function temperature:debuff/cold/soft/2
 execute as @s[scores={tmp.coldTime=1200..,tmp.debuffMode=8,tmp.playerTemp=..-5}] run function temperature:debuff/cold/soft/2
 
-execute as @s[scores={tmp.debuffMode=3..,tmp.playerTemp=..25}] run function temperature:debuff/cold/soft/2
-execute as @s[scores={tmp.debuffMode=4..,tmp.playerTemp=..20}] run function temperature:debuff/cold/soft/2
-execute as @s[scores={tmp.debuffMode=5..,tmp.playerTemp=..15}] run function temperature:debuff/cold/soft/2
-execute as @s[scores={tmp.debuffMode=6..,tmp.playerTemp=..10}] run function temperature:debuff/cold/soft/2
-execute as @s[scores={tmp.debuffMode=7..,tmp.playerTemp=..5}] run function temperature:debuff/cold/soft/2
-execute as @s[scores={tmp.debuffMode=8..,tmp.playerTemp=..0}] run function temperature:debuff/cold/soft/2
-execute as @s[scores={tmp.debuffMode=9..,tmp.playerTemp=..-5}] run function temperature:debuff/cold/soft/2
+execute as @s[scores={tmp.coldTime=1200..,tmp.debuffMode=3..,tmp.playerTemp=..25}] run function temperature:debuff/cold/soft/2
+execute as @s[scores={tmp.coldTime=1200..,tmp.debuffMode=4..,tmp.playerTemp=..20}] run function temperature:debuff/cold/soft/2
+execute as @s[scores={tmp.coldTime=1200..,tmp.debuffMode=5..,tmp.playerTemp=..15}] run function temperature:debuff/cold/soft/2
+execute as @s[scores={tmp.coldTime=1200..,tmp.debuffMode=6..,tmp.playerTemp=..10}] run function temperature:debuff/cold/soft/2
+execute as @s[scores={tmp.coldTime=1200..,tmp.debuffMode=7..,tmp.playerTemp=..5}] run function temperature:debuff/cold/soft/2
+execute as @s[scores={tmp.coldTime=1200..,tmp.debuffMode=8..,tmp.playerTemp=..0}] run function temperature:debuff/cold/soft/2
+execute as @s[scores={tmp.coldTime=1200..,tmp.debuffMode=9..,tmp.playerTemp=..-5}] run function temperature:debuff/cold/soft/2
 
 execute as @s[scores={tmp.playerTemp=..20}] run function temperature:debuff/cold/instant/1
 execute as @s[scores={tmp.playerTemp=..0}] run function temperature:debuff/cold/instant/2
