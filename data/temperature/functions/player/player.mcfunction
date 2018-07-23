@@ -4,7 +4,7 @@ execute as @s store result score @s tmp.calTotalTemp run scoreboard players get 
 execute as @s store result score @s tmp.resultTemp run scoreboard players operation @s tmp.calTotalTemp -= @s tmp.playerTemp
 
 #Split everything for better performance
-execute as @s run scoreboard players add @s tmp.tempSped 1
+execute as @s run scoreboard players add @s tmp.tempSpeed 1
 execute as @s run function temperature:player/temperature_speed
 
 #Clock, Thermometer?
