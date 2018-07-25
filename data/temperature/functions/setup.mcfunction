@@ -45,6 +45,10 @@ scoreboard objectives add tmp.coldTime1 dummy
 scoreboard objectives add tmp.coldTime2 dummy
 scoreboard objectives add tmp.coldTime3 dummy
 scoreboard objectives add tmp.coldTime4 dummy
+scoreboard objectives add tmp.coldTime5 dummy
+scoreboard objectives add tmp.coldTime6 dummy
+scoreboard objectives add tmp.coldTime7 dummy
+scoreboard objectives add tmp.coldTime8 dummy
 scoreboard objectives add tmp.coldTemp dummy
 
 scoreboard objectives add hot.witherTime1 dummy
@@ -61,6 +65,7 @@ function temperature:temp_calculation/scoreboard
 
 #Variable
 scoreboard players set #second tmp.variable 20
+scoreboard players set #cold_temp tmp.variable -5
 
 gamerule commandBlockOutput false
 gamerule logAdminCommands false

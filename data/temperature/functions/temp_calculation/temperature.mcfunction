@@ -13,6 +13,5 @@ execute as @s run function temperature:temp_calculation/temp_source/armor_modifi
 execute as @s run function temperature:temp_calculation/temp_source/water
 execute as @s run function temperature:temp_calculation/temp_source/consumable
 execute as @s run function temperature:temp_calculation/temp_source/on_fire
-execute as @s run function temperature:temp_calculation/temp_source/debuff_mode
 execute as @s run function temperature:temp_calculation/temp_source/player
 execute as @s run function temperature:debuff/debuff
