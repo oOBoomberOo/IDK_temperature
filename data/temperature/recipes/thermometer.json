@@ -1,0 +1,22 @@
+{
+	"type": "crafting_shaped",
+	"pattern": [
+		" G ",
+		"GCG",
+		" I "
+	],
+	"key": {
+		"G": {
+			"item": "minecraft:gold_ingot"
+		},
+		"I": {
+			"item": "minecraft:iron_ingot"
+		},
+		"C": {
+			"item": "minecraft:clock"
+		}
+	},
+	"result": {
+		"item": "minecraft:knowledge_book"
+	}
+}

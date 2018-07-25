@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"thermometer": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "temperature:thermometer"
+			}
+		}
+	},
+	"parent": "temperature:recipes/root",
+	"rewards": {
+		"function": "temperature:recipes/thermometer"
+	}
+}

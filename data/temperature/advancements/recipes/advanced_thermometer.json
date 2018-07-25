@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"advanced_thermometer": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "temperature:advanced_thermometer"
+			}
+		}
+	},
+	"parent": "temperature:recipes/root",
+	"rewards": {
+		"function": "temperature:recipes/advanced_thermometer"
+	}
+}
