@@ -1,0 +1,15 @@
+{
+	"display": {
+		"title": "Freezy!",
+		"description": "Reach -10 degree!",
+		"icon": {
+			"item": "minecraft:snowball"
+		}
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "temperature:temperature/temperature"
+}

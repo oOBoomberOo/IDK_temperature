@@ -1,0 +1,15 @@
+{
+	"display": {
+		"title": "Hottie!",
+		"description": "Reach 110 degree!",
+		"icon": {
+			"item": "minecraft:blaze_powder"
+		}
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "temperature:temperature/temperature"
+}

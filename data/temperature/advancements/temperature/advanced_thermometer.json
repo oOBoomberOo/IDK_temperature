@@ -1,0 +1,23 @@
+{
+	"display": {
+		"title": "Advanced Thermometer!",
+		"description": "Like Thermometer but advanced!",
+		"icon": {
+			"item": "minecraft:clock"
+		}
+	},
+	"criteria": {
+		"thermometer": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:clock",
+						"nbt": "{temperature:{id:\"advanced_thermometer\"}"
+					}
+				]
+			}
+		}
+	},
+	"parent": "temperature:temperature/thermometer"
+}

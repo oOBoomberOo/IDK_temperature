@@ -65,6 +65,7 @@ function temperature:temp_calculation/scoreboard
 #Variable
 scoreboard players set #second tmp.variable 20
 scoreboard players set #cold_temp tmp.variable -5
+execute unless score #debuff_gamerule tmp.variable 0.. run scoreboard players set #debuff_gamerule tmp.variable 0
 
 gamerule commandBlockOutput false
 gamerule logAdminCommands false
