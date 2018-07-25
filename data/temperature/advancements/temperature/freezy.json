@@ -1,9 +1,9 @@
 {
 	"display": {
-		"title": "Freezy!",
-		"description": "Reach -10 degree!",
+		"title": "Bear Food",
+		"description": "Served Cold",
 		"icon": {
-			"item": "minecraft:snowball"
+			"item": "minecraft:ice"
 		}
 	},
 	"criteria": {
@@ -11,5 +11,5 @@
 			"trigger": "minecraft:impossible"
 		}
 	},
-	"parent": "temperature:temperature/temperature"
+	"parent": "temperature:temperature/cold_feet"
 }

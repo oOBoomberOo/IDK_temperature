@@ -3,6 +3,7 @@ execute as @a run function temperature:temp_calculation/main
 
 #Player event
 execute as @a run function temperature:player/player
+execute as @a run function #temperature:advancements
 
 #First time join server
 execute as @a unless score @s tmp.playerTemp matches -100.. run scoreboard players set @s tmp.playerTemp 50

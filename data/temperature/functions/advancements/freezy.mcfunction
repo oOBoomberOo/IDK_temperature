@@ -1,1 +1,1 @@
-execute as @a[scores={tmp.playerTemp=..-10}] run advancement grant @s only temperature:temperature/freezy
+execute as @s[scores={tmp.playerTemp=..-10}] run advancement grant @s only temperature:temperature/freezy

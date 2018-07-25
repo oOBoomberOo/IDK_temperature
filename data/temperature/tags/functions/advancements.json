@@ -1,6 +1,8 @@
 {
 	"values": [
 		"temperature:advancements/hottie",
-		"temperature:advancements/freezy"
+		"temperature:advancements/freezy",
+		"temperature:advancements/refreshing",
+		"temperature:advancements/cold_feet"
 	]
 }

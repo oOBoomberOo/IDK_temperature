@@ -1,0 +1,1 @@
+execute as @s[scores={tmp.wetnessTime=1..,tmp.totalTemp=..20}] run advancement grant @s only temperature:temperature/cold_feet

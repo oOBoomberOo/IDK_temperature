@@ -1,9 +1,9 @@
 {
 	"display": {
-		"title": "Hottie!",
-		"description": "You're on fire!",
+		"title": "Refreshing",
+		"description": "Nothing like some H2O",
 		"icon": {
-			"item": "minecraft:blaze_powder"
+			"item": "minecraft:water_bottle"
 		}
 	},
 	"criteria": {
