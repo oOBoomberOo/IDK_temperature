@@ -1,5 +1,10 @@
-execute as @s run scoreboard players set @s tmp.coldTemp -5
-execute as @s run scoreboard players operation @s tmp.totalTemp += @s tmp.coldTemp
-execute as @s run scoreboard players add @s tmp.debuffTime 1
-execute as @s[scores={tmp.debuffTime=20..}] run effect give @s minecraft:blindness 1 0 true
-execute as @s[scores={tmp.debuffTime=20..}] run scoreboard players set @s tmp.debuffTime 0
+effect give @s slowness 60 1 true
+effect give @s mining_fatigue 60 1 true
+
+scoreboard players add @s cold.blindTime1 1
+execute as @s[scores={cold.blindTime1=340..}] run effect give @s blindness 1 0 true
+execute as @s[scores={cold.blindTime1=340..}] run scoreboard players set @s cold.blindTime1 0
+
+
+
+
