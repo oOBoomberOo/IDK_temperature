@@ -48,7 +48,6 @@ scoreboard objectives add tmp.coldTime4 dummy
 scoreboard objectives add tmp.coldTime5 dummy
 scoreboard objectives add tmp.coldTime6 dummy
 scoreboard objectives add tmp.coldTime7 dummy
-scoreboard objectives add tmp.coldTime8 dummy
 scoreboard objectives add tmp.coldTemp dummy
 
 scoreboard objectives add hot.witherTime1 dummy

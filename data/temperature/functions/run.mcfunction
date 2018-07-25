@@ -14,3 +14,8 @@ execute as @a unless score @s tmp.heatTime2 matches 0.. run scoreboard players s
 
 execute as @a unless score @s tmp.coldTime1 matches 0.. run scoreboard players set @s tmp.coldTime1 0
 execute as @a unless score @s tmp.coldTime2 matches 0.. run scoreboard players set @s tmp.coldTime2 0
+execute as @a unless score @s tmp.coldTime3 matches 0.. run scoreboard players set @s tmp.coldTime3 0
+execute as @a unless score @s tmp.coldTime4 matches 0.. run scoreboard players set @s tmp.coldTime4 0
+execute as @a unless score @s tmp.coldTime5 matches 0.. run scoreboard players set @s tmp.coldTime5 0
+execute as @a unless score @s tmp.coldTime6 matches 0.. run scoreboard players set @s tmp.coldTime6 0
+execute as @a unless score @s tmp.coldTime7 matches 0.. run scoreboard players set @s tmp.coldTime7 0

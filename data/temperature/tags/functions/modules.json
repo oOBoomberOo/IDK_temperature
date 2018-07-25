@@ -1,0 +1,7 @@
+{
+	"values": [
+		"temperature:temp_calculation/temp_source/water",
+		"temperature:temp_calculation/temp_source/consumable",
+		"temperature:temp_calculation/temp_source/on_fire"
+	]
+}
