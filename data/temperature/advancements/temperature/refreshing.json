@@ -3,7 +3,8 @@
 		"title": "Refreshing",
 		"description": "Nothing like some H2O",
 		"icon": {
-			"item": "minecraft:water_bottle"
+			"item": "minecraft:potion",
+			"nbt": "{Potion:\"minecraft:water\"}"
 		}
 	},
 	"criteria": {

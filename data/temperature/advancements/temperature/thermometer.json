@@ -13,7 +13,7 @@
 				"items": [
 					{
 						"item": "minecraft:clock",
-						"nbt": "{temperature:{id:\"thermometer\"}"
+						"nbt": "{temperature:{id:\"thermometer\"}}"
 					}
 				]
 			}
