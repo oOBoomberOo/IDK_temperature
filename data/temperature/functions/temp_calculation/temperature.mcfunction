@@ -14,4 +14,4 @@ execute as @s run function temperature:temp_calculation/temp_source/sp_armor
 execute as @s run function temperature:temp_calculation/temp_source/armor_modifier
 execute as @s run function #temperature:modules
 execute as @s run function temperature:temp_calculation/temp_source/player
-execute as @s if score #debuff_gamerule tmp.variable 1.. run function temperature:debuff/debuff
+execute as @s if score #debuff_gamerule tmp.variable matches 1.. run function temperature:debuff/debuff
