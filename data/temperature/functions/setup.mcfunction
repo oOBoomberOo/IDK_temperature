@@ -1,6 +1,7 @@
 tellraw @a {"text":"Successfully loaded: ","color":"yellow","extra":[{"text":"Climate and Temperature Pack V1.0","color":"blue","bold":false,"italic":false,"underlined":false},{"text":" by ","color":"yellow"},{"text":"SedarGames, Chuckchuk, TheSaltyPug, Boomber","color":"red","bold":false},{"text":".","color":"yellow"}]}
 
 #Objective
+scoreboard objectives add tmp.death minecraft.custom:minecraft.deaths
 scoreboard objectives add tmp.playerTemp dummy
 scoreboard objectives add tmp.totalTemp dummy
 scoreboard objectives add tmp.tempSpeed dummy
@@ -34,6 +35,7 @@ scoreboard objectives add tmp.blockTmp dummy
 scoreboard objectives add tmp.tempBlock dummy
 scoreboard objectives add tmp.fireTime dummy
 scoreboard objectives add tmp.tempFire dummy
+scoreboard objectives add tmp.tempEffect dummy
 
 scoreboard objectives add tmp.hotTime1 dummy
 scoreboard objectives add tmp.hotTime2 dummy
@@ -65,7 +67,4 @@ function temperature:temp_calculation/scoreboard
 #Variable
 scoreboard players set #second tmp.variable 20
 scoreboard players set #cold_temp tmp.variable -5
-execute unless score #debuff_gamerule tmp.variable matches 0.. run scoreboard players set #debuff_gamerule tmp.variable 0
-
-gamerule commandBlockOutput false
-gamerule logAdminCommands false
+execute unless score #debuff_gamerule tmp.variable matches 0.. run scoreboard players set #debuff_gamerule tmp.variable 1
