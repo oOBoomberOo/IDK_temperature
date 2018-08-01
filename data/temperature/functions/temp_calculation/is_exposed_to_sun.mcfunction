@@ -24,5 +24,5 @@ execute as @s[nbt={Inventory:[{Slot:103b,id:"minecraft:leather_helmet"}]}] run t
 execute as @s[nbt={Inventory:[{Slot:103b,id:"minecraft:turtle_helmet"}]}] run tag @s add tmp.sunlight.under_helmet
 execute as @s[nbt={Inventory:[{Slot:103b,id:"minecraft:chainmail_helmet"}]}] run tag @s add tmp.sunlight.under_helmet
 
-execute as @s[tag=tmp.sunlight.under_cover] run tag @s add tmp.sunlight.exposed
-execute as @s[tag=tmp.sunlight.under_helmet] run tag @s add tmp.sunlight.exposed
+execute as @s[tag=tmp.sunlight.under_cover] run tag @s remove tmp.sunlight.exposed
+execute as @s[tag=tmp.sunlight.under_helmet] run tag @s remove tmp.sunlight.exposed

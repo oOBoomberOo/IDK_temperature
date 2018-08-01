@@ -2,9 +2,9 @@
 execute as @s[scores={tmp.playerTemp=78..,tmp.hotTime1=2400..}] run function temperature:debuff/hot/soft/1
 execute as @s[scores={tmp.playerTemp=94..,tmp.hotTime2=1800..}] run function temperature:debuff/hot/soft/2
 execute as @s[scores={tmp.playerTemp=100..,tmp.hotTime2=1800..}] run function temperature:debuff/hot/soft/3
+execute as @s[scores={tmp.playerTemp=85..,tmp.hotTime1=3600..}] run function temperature:debuff/hot/soft/4
 
-execute as @s[scores={tmp.playerTemp=85..}] run function temperature:debuff/hot/instant/1
-execute as @s[scores={tmp.playerTemp=110..}] run function temperature:debuff/hot/instant/2
+execute as @s[scores={tmp.playerTemp=112..}] run function temperature:debuff/hot/instant/1
 
 #--------Cold Debuff--------- 
 execute as @s run scoreboard players set @s tmp.coldTemp 0

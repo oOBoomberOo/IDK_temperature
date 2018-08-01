@@ -1,4 +1,4 @@
-tellraw @a {"text":"Successfully loaded: ","color":"yellow","extra":[{"text":"Climate and Temperature Pack V1.0","color":"blue","bold":false,"italic":false,"underlined":false},{"text":" by ","color":"yellow"},{"text":"SedarGames, Chuckchuk, TheSaltyPug, Boomber","color":"red","bold":false},{"text":".","color":"yellow"}]}
+tellraw @a {"text":"Successfully loaded: ","color":"yellow","extra":[{"text":"Climate and Temperature Pack V0.10","color":"blue","bold":false,"italic":false,"underlined":false},{"text":" by ","color":"yellow"},{"text":"SedarGames, Chuckchuk, TheSaltyPug, Boomber","color":"red","bold":false},{"text":".","color":"yellow"}]}
 
 #Objective
 scoreboard objectives add tmp.death minecraft.custom:minecraft.deaths
@@ -61,6 +61,7 @@ scoreboard objectives add cold.blindTime1 dummy
 scoreboard objectives add cold.blindTime2 dummy
 
 scoreboard objectives add hot.nauseaTime1 dummy
+scoreboard objectives add tmp.cBreathTime dummy
 
 function temperature:temp_calculation/scoreboard
 

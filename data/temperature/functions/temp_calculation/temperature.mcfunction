@@ -1,6 +1,6 @@
 execute as @s run scoreboard players set @s tmp.totalTemp 0
 execute as @s store result score @s tmp.altitude run scoreboard players get @s tmp.playerAlt
-execute as @s run tag @s remove tmp.sunlight.exposed
+execute as @s run tag @s add tmp.sunlight.exposed
 execute as @s run tag @s remove tmp.sunlight.under_helmet
 execute as @s run tag @s remove tmp.sunlight.under_cover
 execute as @s at @s run function temperature:temp_calculation/is_exposed_to_sun

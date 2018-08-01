@@ -1,5 +1,5 @@
-execute as @s[tag=!tmp.sunlight.exposed,scores={tmp.stayInSun=..100}] if score #currentTime tmp.variable matches 0..13000 run scoreboard players add @s tmp.stayInSun 1
-execute as @s[tag=tmp.sunlight.exposed,scores={tmp.stayInSun=0..}] run scoreboard players remove @s tmp.stayInSun 1
+execute as @s[tag=tmp.sunlight.exposed,scores={tmp.stayInSun=..100}] if score #currentTime tmp.variable matches 0..13000 run scoreboard players add @s tmp.stayInSun 1
+execute as @s[tag=!tmp.sunlight.exposed,scores={tmp.stayInSun=0..}] run scoreboard players remove @s tmp.stayInSun 1
 
 execute as @s[scores={tmp.stayInSun=..0}] if score #currentTime tmp.variable matches 0..13000 run scoreboard players set @s tmp.sunlightHeat 0
 execute as @s[scores={tmp.stayInSun=1..20}] if score #currentTime tmp.variable matches 0..13000 run scoreboard players set @s tmp.sunlightHeat 1

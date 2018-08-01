@@ -1,1 +1,1 @@
-effect give @s hunger 30 1 false
+effect give @s hunger 20 1 false
