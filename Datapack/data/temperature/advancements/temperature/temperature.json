@@ -1,0 +1,17 @@
+{
+	"display": {
+		"title": {"translate":"temperature.message.name","extra":[{"text":" "},{"translate":"temperature.message.version"}]},
+		"description": {"translate":"temperature.message.other.1","extra":[{"text":" "},{"translate":"temperature.message.credit"}]},
+		"icon": {
+			"item": "minecraft:clock"
+		},
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"parent": "global:root"
+}

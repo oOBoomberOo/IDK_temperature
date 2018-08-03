@@ -1,0 +1,15 @@
+{
+	"display": {
+		"title": {"translate":"temperature.advancement.name.freezy"},
+		"description": {"translate":"temperature.advancement.desc.freezy"},
+		"icon": {
+			"item": "minecraft:ice"
+		}
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "temperature:temperature/cold_feet"
+}

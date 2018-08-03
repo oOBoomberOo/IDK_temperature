@@ -1,0 +1,15 @@
+{
+	"display": {
+		"title": {"translate":"temperature.advancement.name.cold_feet"},
+		"description": {"translate":"temperature.advancement.desc.cold_feet"},
+		"icon": {
+			"item": "minecraft:snowball"
+		}
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "temperature:temperature/temperature"
+}

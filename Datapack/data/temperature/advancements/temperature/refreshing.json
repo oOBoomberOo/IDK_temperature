@@ -1,0 +1,16 @@
+{
+	"display": {
+		"title": {"translate":"temperature.advancement.name.refreshing"},
+		"description": {"translate":"temperature.advancement.desc.refreshing"},
+		"icon": {
+			"item": "minecraft:potion",
+			"nbt": "{Potion:\"minecraft:water\"}"
+		}
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "temperature:temperature/temperature"
+}

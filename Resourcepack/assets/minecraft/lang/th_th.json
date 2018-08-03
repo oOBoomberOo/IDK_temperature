@@ -1,0 +1,22 @@
+{
+  "temperature.thermometer.temperature": "อุณหภูมิของคุณคือ",
+  "temperature.advancement.name.hottie": "Hottie!",
+  "temperature.advancement.name.cold_feet": "Cold Feet",
+  "temperature.advancement.name.freezy": "Bear Food",
+  "temperature.advancement.name.refreshing": "Refreshing",
+  "temperature.advancement.name.thermometer": "Thermally Active",
+  "temperature.advancement.name.advanced_thermometer": "Entropy, Entropy Never Changes",
+  "temperature.advancement.desc.hottie": "You're on fire!",
+  "temperature.advancement.desc.cold_feet": "Not a good time to take a bath",
+  "temperature.advancement.desc.freezy": "Served Cold",
+  "temperature.advancement.desc.refreshing": "Nothing like some H2O",
+  "temperature.advancement.desc.thermometer": "สร้าง เทอโมมิเตอร์",
+  "temperature.advancement.desc.advanced_thermometer": "สร้าง ไดนามิกเทอโมมิเตอร์",
+  "temperature.message.name": "Climate & Temperature",
+  "temperature.message.credit": "SedarGames, Chuckchuk, TheSaltyPug, Boomber",
+  "temperature.message.version": "v0.2",
+  "temperature.message.loaded": "โหลดสำเร็จ",
+  "temperature.message.other.1": "โดย",
+  "temperature.item.thermometer": "เทอโมมิเตอร์",
+  "temperature.item.advanced_thermometer": "ไดนามิกเทอโมมิเตอร์"
+}

@@ -1,0 +1,22 @@
+{
+  "temperature.thermometer.temperature": "Your temperature is",
+  "temperature.advancement.name.hottie": "Hottie!",
+  "temperature.advancement.name.cold_feet": "Cold Feet",
+  "temperature.advancement.name.freezy": "Bear Food",
+  "temperature.advancement.name.refreshing": "Refreshing",
+  "temperature.advancement.name.thermometer": "Thermally Active",
+  "temperature.advancement.name.advanced_thermometer": "Entropy, Entropy Never Changes",
+  "temperature.advancement.desc.hottie": "You're on fire!",
+  "temperature.advancement.desc.cold_feet": "Not a good time to take a bath",
+  "temperature.advancement.desc.freezy": "Served Cold",
+  "temperature.advancement.desc.refreshing": "Nothing like some H2O",
+  "temperature.advancement.desc.thermometer": "Make a thermometer",
+  "temperature.advancement.desc.advanced_thermometer": "Make a Dynamic Thermometer",
+  "temperature.message.name": "Climate & Temperature",
+  "temperature.message.credit": "SedarGames, Chuckchuk, TheSaltyPug, Boomber",
+  "temperature.message.version": "v0.2",
+  "temperature.message.loaded": "Successfully Loaded",
+  "temperature.message.other.1": "by",
+  "temperature.item.thermometer": "Thermometer",
+  "temperature.item.advanced_thermometer": "Dynamic Thermometer"
+}
