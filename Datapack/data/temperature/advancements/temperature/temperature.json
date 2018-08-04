@@ -1,7 +1,7 @@
 {
 	"display": {
-		"title": {"translate":"temperature.message.name","extra":[{"text":" "},{"translate":"temperature.message.version"}]},
-		"description": {"translate":"temperature.message.other.1","extra":[{"text":" "},{"translate":"temperature.message.credit"}]},
+		"title": {"translate":"Climate & Temperature","extra":[{"text":" v0.2"}]},
+		"description": {"translate":"by","extra":[{"text":" SedarGames, Chuckchuk, TheSaltyPug, Boomber"}]},
 		"icon": {
 			"item": "minecraft:clock"
 		},

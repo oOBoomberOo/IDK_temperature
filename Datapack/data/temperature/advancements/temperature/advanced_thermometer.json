@@ -1,7 +1,7 @@
 {
 	"display": {
-		"title": {"translate":"temperature.advancement.name.advanced_thermometer"},
-		"description": {"translate":"temperature.advancement.desc.advanced_thermometer"},
+		"title": {"translate":"Entropy, Entropy Never Changes"},
+		"description": {"translate":"Make a Dynamic Thermometer"},
 		"icon": {
 			"item": "minecraft:clock"
 		}

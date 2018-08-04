@@ -729,7 +729,7 @@ execute as @s if block ~4 ~4 ~3 minecraft:lava run tag @s add tmp.block.lava_nea
 execute as @s if block ~4 ~4 ~4 minecraft:lava run tag @s add tmp.block.lava_near
 
 execute as @s[tag=tmp.block.lava_near] run scoreboard players set @s tmp.blockTmp 22
-execute as @s[tag=tmp.block.lava_near] run scoreboard players add @s tmp.tempSpeed 1
+execute as @s[tag=tmp.block.lava_near] run scoreboard players operation @s tmp.multiplier += #lava_near_multiplier tmp.variable
 execute as @s[tag=tmp.block.lava_near] run scoreboard players operation @s tmp.tempBlock += @s tmp.blockTmp
 scoreboard players set @s tmp.blockTmp 0
 tag @s remove tmp.block.lava_near

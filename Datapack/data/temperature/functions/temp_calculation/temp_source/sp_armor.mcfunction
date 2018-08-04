@@ -18,12 +18,10 @@ execute as @s if entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots
 execute as @s if entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]},nbt=!{Dimension:-1}] if score @s tmp.totalTemp matches ..49 run scoreboard players set @s tmp.tempArmor1 -2
 execute as @s if entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]},nbt={Dimension:-1}] run scoreboard players set @s tmp.tempArmor1 -1
 
-
-
-execute as @s store result score @s tmp.totalTemp run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor1
-execute as @s store result score @s tmp.totalTemp run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor2
-execute as @s store result score @s tmp.totalTemp run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor3
-execute as @s store result score @s tmp.totalTemp run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor4
+execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.tempArmor1
+execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.tempArmor2
+execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.tempArmor3
+execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.tempArmor4
 
 scoreboard players set @s tmp.tempArmor1 0
 scoreboard players set @s tmp.tempArmor2 0

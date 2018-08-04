@@ -1,7 +1,7 @@
 {
 	"display": {
-		"title": {"translate":"temperature.advancement.name.thermometer"},
-		"description": {"translate":"temperature.advancement.desc.thermometer"},
+		"title": {"translate":"Thermally Active"},
+		"description": {"translate":"Make a thermometer"},
 		"icon": {
 			"item": "minecraft:clock"
 		}

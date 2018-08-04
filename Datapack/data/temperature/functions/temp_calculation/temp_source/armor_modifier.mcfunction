@@ -23,10 +23,10 @@ execute as @s if entity @s[nbt={Inventory:[{Slot:103b,tag:{Enchantments:[{id:"mi
 execute as @s if entity @s[nbt={Inventory:[{Slot:103b,tag:{Enchantments:[{id:"minecraft:fire_protection",lvl:4s}]}}]}] if score @s tmp.totalTemp matches 70.. run scoreboard players set @s tmp.tempArmor4 -4
 
 #MATH
-execute as @s store result score @s tmp.totalTemp run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor1
-execute as @s store result score @s tmp.totalTemp run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor2
-execute as @s store result score @s tmp.totalTemp run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor3
-execute as @s store result score @s tmp.totalTemp run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor4
+execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.tempArmor1
+execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.tempArmor2
+execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.tempArmor3
+execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.tempArmor4
 scoreboard players set @s tmp.tempArmor1 0
 scoreboard players set @s tmp.tempArmor2 0
 scoreboard players set @s tmp.tempArmor3 0

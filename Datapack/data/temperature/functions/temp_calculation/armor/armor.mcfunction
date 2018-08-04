@@ -1,0 +1,1 @@
+execute as @s run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor

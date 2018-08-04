@@ -1,7 +1,7 @@
 {
 	"display": {
-		"title": {"translate":"temperature.advancement.name.refreshing"},
-		"description": {"translate":"temperature.advancement.desc.refreshing"},
+		"title": {"translate":"Refreshing"},
+		"description": {"translate":"Nothing like some H2O"},
 		"icon": {
 			"item": "minecraft:potion",
 			"nbt": "{Potion:\"minecraft:water\"}"

@@ -1,7 +1,7 @@
 {
 	"display": {
-		"title": {"translate":"temperature.advancement.name.freezy"},
-		"description": {"translate":"temperature.advancement.desc.freezy"},
+		"title": {"translate":"Bear Food"},
+		"description": {"translate":"Served Cold"},
 		"icon": {
 			"item": "minecraft:ice"
 		}

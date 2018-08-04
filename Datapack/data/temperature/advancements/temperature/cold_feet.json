@@ -1,7 +1,7 @@
 {
 	"display": {
-		"title": {"translate":"temperature.advancement.name.cold_feet"},
-		"description": {"translate":"temperature.advancement.desc.cold_feet"},
+		"title": {"translate":"Cold Feet"},
+		"description": {"translate":"Not a good time to take a bath"},
 		"icon": {
 			"item": "minecraft:snowball"
 		}
