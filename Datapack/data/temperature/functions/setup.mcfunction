@@ -8,6 +8,7 @@ scoreboard objectives add tmp.playerTemp dummy
 scoreboard objectives add tmp.totalTemp dummy
 scoreboard objectives add tmp.tempSpeed dummy
 scoreboard objectives add tmp.calTotalTemp dummy
+scoreboard objectives add tmp.calMetal dummy
 scoreboard objectives add tmp.resultTemp dummy
 scoreboard objectives add tmp.variable dummy
 scoreboard objectives add tmp.multiplier dummy
@@ -18,6 +19,7 @@ scoreboard objectives add tmp.tempBiome dummy
 scoreboard objectives add tmp.spBiome dummy
 scoreboard objectives add tmp.humidity dummy
 scoreboard objectives add tmp.metalTemp dummy
+scoreboard objectives add tmp.metalArmor dummy
 
 scoreboard objectives add tmp.tempArmor1 dummy
 scoreboard objectives add tmp.tempArmor2 dummy
@@ -81,6 +83,7 @@ function temperature:config/config
 
 #Variable
 scoreboard players set #100 tmp.variable 100
+scoreboard players set #50 tmp.variable 50
 scoreboard players set #second tmp.variable 20
 scoreboard players set #cold_temp tmp.variable -5
 execute unless score #debuff_gamerule tmp.variable matches 0.. run scoreboard players set #debuff_gamerule tmp.variable 1
