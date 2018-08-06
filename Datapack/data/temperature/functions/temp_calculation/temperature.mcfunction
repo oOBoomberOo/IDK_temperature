@@ -6,8 +6,6 @@ execute as @s store result score @s tmp.altitude run scoreboard players get @s t
 execute as @s at @s run function temperature:temp_calculation/is_exposed_to_sun
 
 execute as @s run function temperature:temp_calculation/temp_source/biome
-execute as @s run function temperature:temp_calculation/temp_source/structure
-
 execute as @s run function temperature:temp_calculation/temp_source/sunlight
 
 execute as @s[nbt={Dimension:0}] run function temperature:temp_calculation/temp_source/altitude

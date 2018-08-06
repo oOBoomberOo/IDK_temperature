@@ -12,5 +12,6 @@ execute as @s[nbt=!{Dimension:-1}] at @s run function temperature:temp_calculati
 execute as @s[nbt=!{Dimension:-1}] at @s run function temperature:temp_calculation/temp_source/block/torch_wall
 execute as @s at @s run function temperature:temp_calculation/temp_source/block/redstone_torch_standing
 execute as @s at @s run function temperature:temp_calculation/temp_source/block/redstone_torch_wall
+execute as @s at @s run function temperature:temp_calculation/temp_source/block/nether_brick
 
 execute as @s run scoreboard players operation @s tmp.totalTemp += @s tmp.tempBlock
