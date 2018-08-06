@@ -1,8 +1,8 @@
 # The temperature in which the game will count you as in hot temperature (Affect metal armor) [Default: 70]
-scoreboard players set #hot_temperature tmp.variable 70
+scoreboard players set #hot_temperature tmp.variable 65
 
 # The temperature in which the game will count you as in cold temperature (Affect metal armor) [Default: 34]
-scoreboard players set #cold_temperature tmp.variable 34
+scoreboard players set #cold_temperature tmp.variable 35
 
 # The speed of when temperature is changing in percent [Default: 100]
 scoreboard players set #temperature_speed tmp.variable 100
@@ -15,13 +15,15 @@ scoreboard players set #cold_biome tmp.variable 22
 # The multiplier can be stacked
 scoreboard players set #metal_armor_multiplier tmp.variable 25
 
-# The rate of metal armor temperature speed [Default: 4]
-# When in hot temperature affect the time it take to cool you down
-# When in cold temperature affect the time it take to heat you up
-scoreboard players set #metal_armor_temperature_neg_rate tmp.variable 4
+# The rate of metal armor temperature speed
+scoreboard players set #metal_armor_hot_up_rate tmp.variable 2
+scoreboard players set #metal_armor_hot_down_rate tmp.variable 4
 
-# [Default: 2]
-scoreboard players set #metal_armor_temperature_pos_rate tmp.variable 2
+scoreboard players set #metal_armor_cold_up_rate tmp.variable 4
+scoreboard players set #metal_armor_cold_down_rate tmp.variable 2
+
+scoreboard players set #metal_armor_normal_up_rate tmp.variable 3
+scoreboard players set #metal_armor_normal_down_rate tmp.variable 3
 
 # The amount of multiplier when near lava on temperature speed [Default: 100]
 scoreboard players set #lava_near_multiplier tmp.variable 100
