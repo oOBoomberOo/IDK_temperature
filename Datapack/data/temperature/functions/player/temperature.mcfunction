@@ -29,6 +29,6 @@ execute as @s[tag=temperature.metal_armor,tag=temperature.player.warming,tag=tem
 execute as @s[tag=temperature.metal_armor,tag=temperature.player.cooling,tag=temperature.player.cold] run function temperature:player/temperature/cooling
 
 execute as @s[tag=temperature.metal_armor,tag=temperature.player.warming,tag=!temperature.player.hot,tag=!temperature.player.cold] run function temperature:player/temperature/warming
-execute as @s[tag=temperature.metal_armor,tag=temperature.player.cooling,tag=!temperature.player.hot,tag=!temperature.player.cold] run function temperature:player/temperature/warming
+execute as @s[tag=temperature.metal_armor,tag=temperature.player.cooling,tag=!temperature.player.hot,tag=!temperature.player.cold] run function temperature:player/temperature/cooling
 
 scoreboard players set @s tmp.tempSpeed 0
