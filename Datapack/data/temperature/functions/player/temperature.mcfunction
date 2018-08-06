@@ -10,8 +10,8 @@ tag @s[tag=temperature.metal_armor.4] add temperature.metal_armor
 
 tag @s[nbt={ActiveEffects:[{Id:12b}]}] remove temperature.player.warming
 
-execute as @s if score @s tmp.playerTemp < @s tmp.totalTemp run tag @s remove temperature.player.warming
-execute as @s if score @s tmp.playerTemp > @s tmp.totalTemp run tag @s remove temperature.player.cooling
+execute as @s if score @s tmp.playerTemp > @s tmp.totalTemp run tag @s remove temperature.player.warming
+execute as @s if score @s tmp.playerTemp < @s tmp.totalTemp run tag @s remove temperature.player.cooling
 execute as @s if score @s tmp.playerTemp = @s tmp.totalTemp run tag @s remove temperature.player.warming
 execute as @s if score @s tmp.playerTemp = @s tmp.totalTemp run tag @s remove temperature.player.cooling
 
