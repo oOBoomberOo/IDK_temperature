@@ -15,10 +15,10 @@ scoreboard players set #cold_biome tmp.variable 22
 # The multiplier can be stacked
 scoreboard players set #metal_armor_multiplier tmp.variable 25
 
-# The rate of metal armor temperature speed [Default: 4]
+# The rate of metal armor temperature speed [Default: 2]
 # When in hot temperature affect the time it take to cool you down
 # When in cold temperature affect the time it take to heat you up
-scoreboard players set #metal_armor_temperature_rate tmp.variable 4
+scoreboard players set #metal_armor_temperature_rate tmp.variable 2
 
 # The amount of multiplier when near lava on temperature speed [Default: 100]
 scoreboard players set #lava_near_multiplier tmp.variable 100
