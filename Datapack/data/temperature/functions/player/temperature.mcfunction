@@ -21,14 +21,14 @@ execute as @s[tag=!temperature.metal_armor,tag=temperature.player.cooling] run f
 execute as @s[tag=temperature.metal_armor] run scoreboard players add @s tmp.metalTemp 1
 
 execute as @s[tag=!temperature.metal_armor] run scoreboard players set @s tmp.metalTemp 0
-execute as @s[tag=!temperature.player.warming,tag=!temperature.player.cooling] run scoreboard players set @s tmp.metalTemp 0
+#execute as @s[tag=!temperature.player.warming,tag=!temperature.player.cooling] run scoreboard players set @s tmp.metalTemp 0
 
-execute as @s[tag=temperature.metal_armor,tag=temperature.player.warming,tag=temperature.player.hot] run function temperature:player/temperature/warming
-execute as @s[tag=temperature.metal_armor,tag=temperature.player.cooling,tag=temperature.player.hot] if score @s tmp.metalTemp >= #metal_armor_temperature_rate tmp.variable run function temperature:player/temperature/cooling
-execute as @s[tag=temperature.metal_armor,tag=temperature.player.warming,tag=temperature.player.cold] if score @s tmp.metalTemp >= #metal_armor_temperature_rate tmp.variable run function temperature:player/temperature/warming
-execute as @s[tag=temperature.metal_armor,tag=temperature.player.cooling,tag=temperature.player.cold] run function temperature:player/temperature/cooling
+execute as @s[tag=temperature.metal_armor,tag=temperature.player.warming,tag=temperature.player.hot] if score @s tmp.metalTemp >= #metal_armor_temperature_pos_rate tmp.variable run function temperature:player/temperature/warming
+execute as @s[tag=temperature.metal_armor,tag=temperature.player.cooling,tag=temperature.player.hot] if score @s tmp.metalTemp >= #metal_armor_temperature_neg_rate tmp.variable run function temperature:player/temperature/cooling
+execute as @s[tag=temperature.metal_armor,tag=temperature.player.warming,tag=temperature.player.cold] if score @s tmp.metalTemp >= #metal_armor_temperature_neg_rate tmp.variable run function temperature:player/temperature/warming
+execute as @s[tag=temperature.metal_armor,tag=temperature.player.cooling,tag=temperature.player.cold] if score @s tmp.metalTemp >= #metal_armor_temperature_pos_rate tmp.variable run function temperature:player/temperature/cooling
 
-execute as @s[tag=temperature.metal_armor,tag=temperature.player.warming,tag=!temperature.player.hot,tag=!temperature.player.cold] run function temperature:player/temperature/warming
-execute as @s[tag=temperature.metal_armor,tag=temperature.player.cooling,tag=!temperature.player.hot,tag=!temperature.player.cold] run function temperature:player/temperature/cooling
+execute as @s[tag=temperature.metal_armor,tag=temperature.player.warming,tag=!temperature.player.hot,tag=!temperature.player.cold] if score @s tmp.metalTemp >= #metal_armor_temperature_pos_rate tmp.variable run function temperature:player/temperature/warming
+execute as @s[tag=temperature.metal_armor,tag=temperature.player.cooling,tag=!temperature.player.hot,tag=!temperature.player.cold] if score @s tmp.metalTemp >= #metal_armor_temperature_pos_rate tmp.variable run function temperature:player/temperature/cooling
 
 scoreboard players set @s tmp.tempSpeed 0
