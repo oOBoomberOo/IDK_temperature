@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"golden_carrot": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:golden_carrot"
+				}
+			}
+		}
+	},
+	"parent": "temperature:consumable/root",
+	"rewards": {
+		"function": "temperature:temp_calculation/consumable/golden/golden_carrot"
+	}
+}

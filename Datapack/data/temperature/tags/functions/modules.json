@@ -1,7 +1,8 @@
 {
+	"replace": false,
 	"values": [
 		"temperature:temp_calculation/temp_source/wetness",
-		"temperature:temp_calculation/temp_source/consumable",
+		"#temperature:consumable/loop",
 		"temperature:temp_calculation/temp_source/on_fire"
 	]
 }

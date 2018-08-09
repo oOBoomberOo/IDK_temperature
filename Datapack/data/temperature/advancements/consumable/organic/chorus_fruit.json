@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"chorus_fruit": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:chorus_fruit"
+				}
+			}
+		}
+	},
+	"parent": "temperature:consumable/root",
+	"rewards": {
+		"function": "temperature:temp_calculation/consumable/organic/chorus_fruit"
+	}
+}

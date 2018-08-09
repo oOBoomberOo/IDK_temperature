@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"pumpkin_pie": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:pumpkin_pie"
+				}
+			}
+		}
+	},
+	"parent": "temperature:consumable/root",
+	"rewards": {
+		"function": "temperature:temp_calculation/consumable/baked/pumpkin_pie"
+	}
+}

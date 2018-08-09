@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"cooked_potato": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_potato"
+				}
+			}
+		}
+	},
+	"parent": "temperature:consumable/root",
+	"rewards": {
+		"function": "temperature:temp_calculation/consumable/baked/cooked_potato"
+	}
+}

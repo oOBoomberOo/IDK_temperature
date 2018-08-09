@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"cookie": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cookie"
+				}
+			}
+		}
+	},
+	"parent": "temperature:consumable/root",
+	"rewards": {
+		"function": "temperature:temp_calculation/consumable/baked/cookie"
+	}
+}

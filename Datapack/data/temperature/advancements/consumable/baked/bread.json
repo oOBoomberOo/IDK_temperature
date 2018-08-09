@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"bread": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:bread"
+				}
+			}
+		}
+	},
+	"parent": "temperature:consumable/root",
+	"rewards": {
+		"function": "temperature:temp_calculation/consumable/baked/bread"
+	}
+}

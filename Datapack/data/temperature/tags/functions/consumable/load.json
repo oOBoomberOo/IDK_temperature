@@ -1,0 +1,6 @@
+{
+	"replace": false,
+	"values": [
+		"temperature:temp_calculation/consumable/scoreboard"
+	]
+}
