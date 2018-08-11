@@ -1,6 +1,5 @@
 {
 	"values": [
-		"temperature:setup",
-		"temperature:temp_calculation/scoreboard"
+		"temperature:setup"
 	]
 }

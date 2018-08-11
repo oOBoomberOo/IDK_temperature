@@ -20,4 +20,4 @@ execute as @s[scores={tmp.playerTemp=6..}] run scoreboard players set @s tmp.col
 execute as @s[scores={tmp.playerTemp=1..}] run scoreboard players set @s tmp.coldTime6 0
 execute as @s[scores={tmp.playerTemp=-4..}] run scoreboard players set @s tmp.coldTime7 0
 
-execute as @s[gamemode=survival] if score #debuff_gamerule tmp.variable matches 1.. run function temperature:debuff/debuff
+execute as @s[gamemode=survival] if score #debuff_gamerule tmp.variable matches 1.. run function #temperature:debuff/loop
