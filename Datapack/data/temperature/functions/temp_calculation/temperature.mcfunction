@@ -1,3 +1,4 @@
+# reset temperature
 execute as @s run scoreboard players set @s tmp.totalTemp 0
 execute as @s run scoreboard players set @s tmp.tempArmor 0
 
@@ -12,13 +13,10 @@ execute as @s[nbt={Dimension:0}] run function temperature:temp_calculation/temp_
 
 execute as @s run function temperature:temp_calculation/temp_source/block
 
-execute as @s run function temperature:temp_calculation/temp_source/armor
-execute as @s run function temperature:temp_calculation/temp_source/metal_armor
-execute as @s run function temperature:temp_calculation/temp_source/sp_armor
-execute as @s run function temperature:temp_calculation/temp_source/armor_modifier
+execute as @s run function #temperature:temp_source/armors
 execute as @s run function temperature:temp_calculation/armor/armor
 
-execute as @s run function #temperature:modules
+execute as @s run function #temperature:temp_source/modules
 
 execute as @s run function temperature:temp_calculation/temp_source/player
 

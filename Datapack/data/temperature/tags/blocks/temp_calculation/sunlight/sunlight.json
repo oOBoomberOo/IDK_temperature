@@ -1,10 +1,13 @@
 {
 	"values": [
+		"#minecraft:signs",
+		"#minecraft:wall_signs",
+		"#minecraft:banners",
+		"#temperature:temp_calculation/stained_glass",
+		"#temperature:temp_calculation/stained_glass_pane",
 		"minecraft:air",
 		"minecraft:glass",
 		"minecraft:glass_pane",
-		"#temperature:temp_calculation/stained_glass",
-		"#temperature:temp_calculation/stained_glass_pane",
 		"minecraft:vine",
 		"minecraft:cocoa",
 		"minecraft:ladder",
@@ -19,9 +22,6 @@
 		"minecraft:wall_torch",
 		"minecraft:redstone_torch",
 		"minecraft:redstone_wall_torch",
-		"minecraft:sign",
-		"minecraft:wall_sign",
-		"#minecraft:banners",
 		"minecraft:end_rod"
 	]
 }

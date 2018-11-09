@@ -9,6 +9,7 @@
 	},
 	"parent": "temperature:recipes/root",
 	"rewards": {
-		"function": "temperature:recipes/thermometer"
+		"function": "temperature:recipes/thermometer",
+		"loot": ["temperature:items/thermometer/thermometer"]
 	}
 }

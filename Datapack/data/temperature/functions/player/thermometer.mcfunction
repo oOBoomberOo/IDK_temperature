@@ -2,10 +2,10 @@ execute as @s run tag @s remove temperature.player.thermometer
 execute as @s run tag @s remove temperature.player.advanced_thermometer
 execute as @s run tag @s remove temperature.player.in_cold_biome
 
-execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock",tag:{temperature:{id:"thermometer"}}}]}] run tag @s add temperature.player.thermometer
-execute as @s[nbt={SelectedItem:{id:"minecraft:clock",tag:{temperature:{id:"thermometer"}}}}] run tag @s add temperature.player.thermometer
-execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock",tag:{temperature:{id:"advanced_thermometer"}}}]}] run tag @s add temperature.player.advanced_thermometer
-execute as @s[nbt={SelectedItem:{id:"minecraft:clock",tag:{temperature:{id:"advanced_thermometer"}}}}] run tag @s add temperature.player.advanced_thermometer
+execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock",tag:{ucit:{id:"thermometer"}}}]}] run tag @s add temperature.player.thermometer
+execute as @s[nbt={SelectedItem:{id:"minecraft:clock",tag:{ucit:{id:"thermometer"}}}}] run tag @s add temperature.player.thermometer
+execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:clock",tag:{ucit:{id:"advanced_thermometer"}}}]}] run tag @s add temperature.player.advanced_thermometer
+execute as @s[nbt={SelectedItem:{id:"minecraft:clock",tag:{ucit:{id:"advanced_thermometer"}}}}] run tag @s add temperature.player.advanced_thermometer
 execute as @s if score @s tmp.tempBiome <= #cold_biome tmp.variable run tag @s add temperature.player.in_cold_biome
 
 execute as @s[tag=!temperature.player.in_cold_biome,tag=temperature.player.thermometer,tag=!temperature.player.advanced_thermometer,scores={tmp.totalTemp=..-1}] run title @s actionbar ["",{"translate":"Your temperature is","color":"white"},{"text":" : ","color":"gray"},{"score":{"name":"@s","objective":"tmp.playerTemp"},"color":"white"}]

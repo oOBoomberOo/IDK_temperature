@@ -4,7 +4,7 @@ execute as @s[scores={tmp.stayInWater=..24000}] at @s if block ~ ~ ~ #temperatur
 
 #Run corresponding function depend on the type of block
 execute as @s[scores={tmp.stayInWater=100..}] at @s positioned ~ ~0.1 ~ if block ~ ~ ~ water unless block ~ ~1 ~ water run function temperature:temp_calculation/temp_source/wetness/water_half
-execute as @s[scores={tmp.stayInWater=100..}] at @s positioned ~ ~0.1 ~ if block ~ ~ ~ #temperature:temp_calculation/wetness/waterlogged[waterlogged=true] run function temperature:temp_calculation/temp_source/wetness/water_half
+execute as @s[scores={tmp.stayInWater=100..}] at @s positioned ~ ~0.1 ~ if block ~ ~ ~ #temperature:temp_calculation/wetness/waterlogged[waterlogged=true] unless block ~ ~1 ~ water run function temperature:temp_calculation/temp_source/wetness/water_half
 execute as @s[scores={tmp.stayInWater=100..}] at @s positioned ~ ~0.1 ~ if block ~ ~ ~ water if block ~ ~1 ~ water run function temperature:temp_calculation/temp_source/wetness/water_full
 execute as @s[scores={tmp.stayInWater=100..,tmp.wetnessTime=..0}] at @s if block ~ ~ ~ cauldron[level=3] run function temperature:temp_calculation/temp_source/wetness/cauldron
 execute as @s[scores={tmp.stayInWater=100..,tmp.wetnessTime=..0}] at @s if block ~ ~ ~ cauldron[level=2] run function temperature:temp_calculation/temp_source/wetness/cauldron

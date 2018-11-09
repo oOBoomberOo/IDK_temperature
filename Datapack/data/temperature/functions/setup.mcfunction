@@ -1,4 +1,4 @@
-tellraw @a [{"translate":"Successfully Loaded","color":"yellow"},{"text":" : ","color":"yellow"},{"translate":"Climate & Temperature","color":"blue"},{"text":" Pack v0.2","color":"blue"},{"text":" "},{"translate":"by","color":"yellow"},{"text":" "},{"translate":"SedarGames, Chuckchuk, TheSaltyPug, Boomber","color":"red"},{"text":".","color":"yellow"}]
+tellraw @a [{"translate":"Successfully Loaded","color":"yellow"},{"text":" : ","color":"yellow"},{"translate":"Climate & Temperature","color":"blue"},{"text":" Pack v0.2.2","color":"blue"},{"text":" "},{"translate":"by","color":"yellow"},{"text":" "},{"translate":"SedarGames, Chuckchuk, TheSaltyPug, Boomber","color":"red"},{"text":".","color":"yellow"}]
 
 #Objective
 scoreboard objectives add tmp.death minecraft.custom:minecraft.deaths
