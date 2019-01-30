@@ -1,3 +1,6 @@
+scoreboard players set #min_day tmp.variable 0
+scoreboard players set #max_day tmp.variable 13000
+
 # Min hot temperature (Affect metal armor) [Default: 70]
 scoreboard players set #hot_temperature tmp.variable 65
 

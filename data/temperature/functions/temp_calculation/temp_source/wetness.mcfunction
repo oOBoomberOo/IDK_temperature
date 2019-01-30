@@ -1,3 +1,7 @@
+#
+# Disabled Wetness until further improvement
+#
+
 #Detect if player is in water type block then increase tmp.stayInWater
 execute as @s[scores={tmp.stayInWater=..24000}] at @s if block ~ ~ ~ #temperature:temp_calculation/wetness/water_source run scoreboard players add @s tmp.stayInWater 1
 execute as @s[scores={tmp.stayInWater=..24000}] at @s if block ~ ~ ~ #temperature:temp_calculation/wetness/waterlogged[waterlogged=true] run scoreboard players add @s tmp.stayInWater 1

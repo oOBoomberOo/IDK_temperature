@@ -1,1 +1,1 @@
-execute as @s run scoreboard players operation @s tmp.totalTemp += @s tmp.tempArmor
+execute as @s run scoreboard players operation #player.totalTemp tmp.variable += #player.armorTemp tmp.variable

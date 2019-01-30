@@ -26,7 +26,7 @@ execute as @s if block ~1 ~1 ~-1 minecraft:nether_bricks run tag @s add tmp.bloc
 execute as @s if block ~1 ~1 ~0 minecraft:nether_bricks run tag @s add tmp.block.nether_brick
 execute as @s if block ~1 ~1 ~1 minecraft:nether_bricks run tag @s add tmp.block.nether_brick
 
-execute as @s[tag=tmp.block.nether_brick] run scoreboard players set @s tmp.blockTmp -4
-execute as @s[tag=tmp.block.nether_brick] run scoreboard players operation @s tmp.tempBlock += @s tmp.blockTmp
-scoreboard players set @s tmp.blockTmp 0
+execute as @s[tag=tmp.block.nether_brick] run scoreboard players set #player.blockTmp tmp.variable -4
+execute as @s[tag=tmp.block.nether_brick] run scoreboard players operation #player.tempBlock tmp.variable += #player.blockTmp tmp.variable
+scoreboard players set #player.blockTmp tmp.variable 0
 tag @s remove tmp.block.nether_brick

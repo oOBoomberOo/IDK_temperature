@@ -124,8 +124,8 @@ execute as @s if block ~2 ~2 ~0 minecraft:redstone_torch[lit=true] run tag @s ad
 execute as @s if block ~2 ~2 ~1 minecraft:redstone_torch[lit=true] run tag @s add tmp.block.redstone_torch_standing
 execute as @s if block ~2 ~2 ~2 minecraft:redstone_torch[lit=true] run tag @s add tmp.block.redstone_torch_standing
 
-execute as @s[tag=tmp.block.redstone_torch_standing,tag=tmp.sunlight.under_cover] run scoreboard players set @s tmp.blockTmp -2	
-execute as @s[tag=tmp.block.redstone_torch_standing,tag=!tmp.sunlight.under_cover] run scoreboard players set @s tmp.blockTmp -4
-execute as @s[tag=tmp.block.redstone_torch_standing] run scoreboard players operation @s tmp.tempBlock += @s tmp.blockTmp
-scoreboard players set @s tmp.blockTmp 0
+execute as @s[tag=tmp.block.redstone_torch_standing,tag=tmp.sky.under_cover] run scoreboard players set #player.blockTmp tmp.variable -2	
+execute as @s[tag=tmp.block.redstone_torch_standing,tag=!tmp.sky.under_cover] run scoreboard players set #player.blockTmp tmp.variable -4
+execute as @s[tag=tmp.block.redstone_torch_standing] run scoreboard players operation #player.tempBlock tmp.variable += #player.blockTmp tmp.variable
+scoreboard players set #player.blockTmp tmp.variable 0
 tag @s remove tmp.block.redstone_torch_standing

@@ -1,5 +1,5 @@
 #Temperature calculation
-execute as @a run function temperature:temp_calculation/main
+execute as @a at @s run function temperature:temp_calculation/main
 
 #Player event
 execute as @a run function temperature:player/player

@@ -1,1 +1,1 @@
-execute as @s run scoreboard players operation @s tmp.totalTemp += @s tmp.tempBiome
+scoreboard players operation #player.totalTemp tmp.variable += @s tmp.tempBiome

@@ -1,35 +1,35 @@
 #Helmet
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players get @s tmp.totalTemp
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp -= #50 tmp.variable
-execute as @s store result score @s tmp.calMetal run scoreboard players get @s tmp.metalArmor1
-#execute as @s store result score @s tmp.calMetal run scoreboard players operation @s tmp.calMetal += #100 tmp.variable
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp *= @s tmp.calMetal
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp /= #100 tmp.variable
-execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.calTotalTemp
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players get #player.totalTemp tmp.variable
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation -= #50 tmp.variable
+execute as @s store result score #player.metalTemp tmp.calculation run scoreboard players get #player.armorTemp1 tmp.variable
+#execute as @s store result score #player.metalTemp tmp.calculation run scoreboard players operation #player.metalTemp tmp.calculation += #100 tmp.variable
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation *= #player.metalTemp tmp.calculation
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation /= #100 tmp.variable
+execute as @s run scoreboard players operation #player.armorTemp tmp.variable += #player.totalTemp tmp.calculation
 
 #Chestplate
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players get @s tmp.totalTemp
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp -= #50 tmp.variable
-execute as @s store result score @s tmp.calMetal run scoreboard players get @s tmp.metalArmor2
-#execute as @s store result score @s tmp.calMetal run scoreboard players operation @s tmp.calMetal += #100 tmp.variable
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp *= @s tmp.calMetal
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp /= #100 tmp.variable
-execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.calTotalTemp
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players get #player.totalTemp tmp.variable
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation -= #50 tmp.variable
+execute as @s store result score #player.metalTemp tmp.calculation run scoreboard players get #player.armorTemp2 tmp.variable
+#execute as @s store result score #player.metalTemp tmp.calculation run scoreboard players operation #player.metalTemp tmp.calculation += #100 tmp.variable
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation *= #player.metalTemp tmp.calculation
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation /= #100 tmp.variable
+execute as @s run scoreboard players operation #player.armorTemp tmp.variable += #player.totalTemp tmp.calculation
 
 #Leggings
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players get @s tmp.totalTemp
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp -= #50 tmp.variable
-execute as @s store result score @s tmp.calMetal run scoreboard players get @s tmp.metalArmor3
-#execute as @s store result score @s tmp.calMetal run scoreboard players operation @s tmp.calMetal += #100 tmp.variable
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp *= @s tmp.calMetal
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp /= #100 tmp.variable
-execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.calTotalTemp
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players get #player.totalTemp tmp.variable
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation -= #50 tmp.variable
+execute as @s store result score #player.metalTemp tmp.calculation run scoreboard players get #player.armorTemp3 tmp.variable
+#execute as @s store result score #player.metalTemp tmp.calculation run scoreboard players operation #player.metalTemp tmp.calculation += #100 tmp.variable
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation *= #player.metalTemp tmp.calculation
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation /= #100 tmp.variable
+execute as @s run scoreboard players operation #player.armorTemp tmp.variable += #player.totalTemp tmp.calculation
 
 #Boots
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players get @s tmp.totalTemp
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp -= #50 tmp.variable
-execute as @s store result score @s tmp.calMetal run scoreboard players get @s tmp.metalArmor4
-#execute as @s store result score @s tmp.calMetal run scoreboard players operation @s tmp.calMetal += #100 tmp.variable
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp *= @s tmp.calMetal
-execute as @s store result score @s tmp.calTotalTemp run scoreboard players operation @s tmp.calTotalTemp /= #100 tmp.variable
-execute as @s run scoreboard players operation @s tmp.tempArmor += @s tmp.calTotalTemp
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players get #player.totalTemp tmp.variable
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation -= #50 tmp.variable
+execute as @s store result score #player.metalTemp tmp.calculation run scoreboard players get #player.armorTemp4 tmp.variable
+#execute as @s store result score #player.metalTemp tmp.calculation run scoreboard players operation #player.metalTemp tmp.calculation += #100 tmp.variable
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation *= #player.metalTemp tmp.calculation
+execute as @s store result score #player.totalTemp tmp.calculation run scoreboard players operation #player.totalTemp tmp.calculation /= #100 tmp.variable
+execute as @s run scoreboard players operation #player.armorTemp tmp.variable += #player.totalTemp tmp.calculation

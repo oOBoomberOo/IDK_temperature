@@ -1,4 +1,4 @@
-execute as @s store result score @s tmp.fireTime run data get entity @s Fire 1
-execute as @s[scores={tmp.fireTime=1..}] run scoreboard players set @s tmp.tempFire 20
-execute as @s[scores={tmp.fireTime=..0}] run scoreboard players set @s tmp.tempFire 0
-execute as @s run scoreboard players operation @s tmp.totalTemp += @s tmp.tempFire
+execute as @s store result score #player.fireTime tmp.calculation run data get entity @s Fire 1
+execute as @s if score #player.fireTime tmp.calculation matches 1.. run scoreboard players set #player.tempFire tmp.calculation 20
+execute as @s if score #player.fireTime tmp.calculation matches ..0 run scoreboard players set #player.tempFire tmp.calculation 0
+execute as @s run scoreboard players operation #player.totalTemp tmp.variable += #player.tempFire tmp.calculation

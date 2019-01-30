@@ -1,3 +1,8 @@
+execute as @s run scoreboard players operation @s tmp.totalTemp = #player.totalTemp tmp.variable
+
+# So in this function tmp.playerTemp is use instead of tmp.totalTemp anyone know why this is?
+execute as @s run scoreboard players operation @s tmp.playerTemp = #player.totalTemp tmp.variable
+
 execute as @s[scores={tmp.playerTemp=70..,tmp.hotTime1=..24000}] run scoreboard players add @s tmp.hotTime1 1
 execute as @s[scores={tmp.playerTemp=83..,tmp.hotTime2=..24000}] run scoreboard players add @s tmp.hotTime2 1
 
