@@ -20,12 +20,10 @@ scoreboard objectives add tmp.altitude dummy
 
 scoreboard objectives add tmp.stayInBiome dummy
 scoreboard objectives add tmp.stayInSun dummy
-#scoreboard objectives add tmp.stayInWater dummy
+scoreboard objectives add tmp.stayInWater dummy
 
-#scoreboard objectives add tmp.wetnessTemp dummy
-#scoreboard objectives add tmp.wetnessTtemp dummy
-#scoreboard objectives add tmp.wetnessTime dummy
-#scoreboard objectives add tmp.wetnessAmt dummy
+scoreboard objectives add tmp.wetnessTime dummy
+scoreboard objectives add tmp.wetnessTemp dummy
 
 scoreboard objectives add tmp.tempEffect dummy
 

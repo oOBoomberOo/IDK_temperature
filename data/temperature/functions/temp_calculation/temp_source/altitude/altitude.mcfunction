@@ -20,8 +20,8 @@ execute as @s[scores={tmp.altitude=33}] run scoreboard players set #player.total
 
 execute as @s[scores={tmp.altitude=0..33}] run scoreboard players set #player.altitudeTemp tmp.variable 0
 
-execute as @s if score @s tmp.spBiome matches 1.. run function temperature:temp_calculation/temp_source/altitude/spBiome
-execute as @s if score @s tmp.spBiome matches ..0 run function temperature:temp_calculation/temp_source/altitude/normalBiome
+execute as @s if score @s tmp.spBiome matches 1.. run function temperature:temp_calculation/temp_source/altitude/sp_biome
+execute as @s if score @s tmp.spBiome matches ..0 run function temperature:temp_calculation/temp_source/altitude/normal_biome
 
 execute as @s[scores={tmp.altitude=75..82}] run scoreboard players set #player.altitudeTemp tmp.variable -1
 execute as @s[scores={tmp.altitude=83..92}] run scoreboard players set #player.altitudeTemp tmp.variable -2

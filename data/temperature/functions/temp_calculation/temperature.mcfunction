@@ -1,6 +1,7 @@
 # reset temperature
 scoreboard players set #player.totalTemp tmp.variable 0
 scoreboard players set #player.armorTemp tmp.variable 0
+scoreboard players set #player.wetnessTemp tmp.variable 0
 
 execute as @s store result score @s tmp.altitude run scoreboard players get #player.altitude tmp.variable
 execute as @s if score #currentTime tmp.variable > #min_day tmp.variable if score #currentTime tmp.variable < #max_day tmp.variable run function temperature:temp_calculation/sky
