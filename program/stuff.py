@@ -19,12 +19,25 @@ client = gspread.authorize(creds)
 #                           .
 #                           . 
 #         ]
-def getSheet(name, worksheet, index):
+def getWorksheetFromSheet(spreadsheet, worksheet, index):
   try:
-    sheet = client.open(name).worksheet(worksheet).get_all_values()
+    sheet = client.open(spreadsheet).worksheet(worksheet).get_all_values()
     return sheet[index:]
   except:
-    print("Spreadsheet " + name + ", '" + worksheet + "' not found.")
+    print("Spreadsheet " + spreadsheet + ", '" + worksheet + "' not found.")
+    return []
+
+def getSheet(spreadsheet):
+  try:
+    return client.open(spreadsheet)
+  except:
+    print('Spreadsheet:', '"' + spreadsheet + '"', 'cannot be found.')
+
+def getWorksheet(spreadsheet, worksheet, index):
+  try:
+    return spreadsheet.worksheet(worksheet).get_all_values()[index:]
+  except:
+    print('Worksheet: ', '"' + worksheet + '"', 'cannot be found.')
     return []
 
 # Check if the given path exists, if not create a directory to that path

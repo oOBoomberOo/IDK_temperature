@@ -1,2 +1,3 @@
 ./program/secret.json
-./program/output/*
+./program/output
+./program/__pycache__

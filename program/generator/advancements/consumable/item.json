@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"<name>": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					<consumable_item>
+				}
+			}
+		}
+	},
+	"parent": "<datapack_id>:consumable/root",
+	"rewards": {
+		"function": "<datapack_id>:temp_calculation/consumable/<consumable_location>"
+	}
+}

@@ -1,5 +1,10 @@
+#######################################
+# Welcome everyone to my messy code!! #
+#######################################
+
 import json
 from stuff import *
+import pprint
 
 datapack_id = 'temperature'
 
@@ -7,10 +12,7 @@ datapack_id = 'temperature'
 generator = {
   'advancements': {
     'consumable': {
-      'normal': open('./generator/advancements/consumable/normal.json').read().replace('<datapack_id>', datapack_id),
-      'nbt': open('./generator/advancements/consumable/nbt.json').read().replace('<datapack_id>', datapack_id),
-      'potion': open('./generator/advancements/consumable/potion.json').read().replace('<datapack_id>', datapack_id),
-      'potion_nbt': open('./generator/advancements/consumable/potion_nbt.json').read().replace('<datapack_id>', datapack_id)
+      'item': open('./generator/advancements/consumable/item.json').read().replace('<datapack_id>', datapack_id)
     },
     'find_biome': {
       'find_biome': open('./generator/advancements/find_biome/find_biome.json').read().replace('<datapack_id>', datapack_id)
@@ -20,6 +22,10 @@ generator = {
     'temp_calculation': {
       'biome': {
         'item': open('./generator/functions/temp_calculation/biome/item.mcfunction').read().replace('<datapack_id>', datapack_id)
+      },
+      'consumable': {
+        'item': open('./generator/functions/temp_calculation/consumable/item.mcfunction').read().replace('<datapack_id>', datapack_id),
+        'scoreboard': open('./generator/functions/temp_calculation/consumable/item.mcfunction').read().replace('<datapack_id>', datapack_id)
       },
       'temp_source': {
         'armor': {
@@ -73,18 +79,23 @@ def armor(raw):
   
   armor_types = ['helmet', 'chestplate', 'leggings', 'boots']
   armor_command = command['functions']['temp_calculation']['temp_source']['armor']
-  armor_list ={'helmet': [], 'chestplate': [], 'leggings': [], 'boots': []}
-  metal_armor_list ={'helmet': [], 'chestplate': [], 'leggings': [], 'boots': []}
-
-  for item in armor:
-    if item['type'] in armor_list:
-      armor_list[item['type']].append(armor_command['armor'][item['type']].replace('<id>', item['id']).replace('<temperature>', item['temperature']))
-
-  for item in metal_armor:
-    if item['type'] in metal_armor_list:
-      metal_armor_list[item['type']].append(armor_command['metal_armor'][item['type']].replace('<id>', item['id']).replace('<temperature_range>', '..' + item['temp_range'][0]).replace('<temperature>', item['temperature'][0]))
-      metal_armor_list[item['type']].append(armor_command['metal_armor'][item['type']].replace('<id>', item['id']).replace('<temperature_range>', item['temp_range'][1] + '..').replace('<temperature>', item['temperature'][1]))
-
+  armor_list = {
+    'helmet': {armor_command['armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature']) for x in armor if x['type'] == 'helmet'}, 
+    'chestplate': {armor_command['armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature']) for x in armor if x['type'] == 'chestplate'}, 
+    'leggings': {armor_command['armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature']) for x in armor if x['type'] == 'leggings'}, 
+    'boots': {armor_command['armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature']) for x in armor if x['type'] == 'boots'}
+    }
+  metal_armor_list = {
+    'helmet': {armor_command['metal_armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature'][0]).replace('<temperature_range>', '..' + x['temp_range'][0]) + '\n' +
+              armor_command['metal_armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature'][1]).replace('<temperature_range>', x['temp_range'][1] + '..') for x in metal_armor if x['type'] == 'helmet'}, 
+    'chestplate': {armor_command['metal_armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature'][0]).replace('<temperature_range>', '..' + x['temp_range'][0]) + '\n' +
+              armor_command['metal_armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature'][1]).replace('<temperature_range>', x['temp_range'][1] + '..') for x in metal_armor if x['type'] == 'chestplate'}, 
+    'leggings': {armor_command['metal_armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature'][0]).replace('<temperature_range>', '..' + x['temp_range'][0]) + '\n' +
+              armor_command['metal_armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature'][1]).replace('<temperature_range>', x['temp_range'][1] + '..') for x in metal_armor if x['type'] == 'leggings'}, 
+    'boots': {armor_command['metal_armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature'][0]).replace('<temperature_range>', '..' + x['temp_range'][0]) + '\n' +
+              armor_command['metal_armor'][x['type']].replace('<id>', x['id']).replace('<temperature>', x['temperature'][1]).replace('<temperature_range>', x['temp_range'][1] + '..') for x in metal_armor if x['type'] == 'boots'}
+    }
+  
   for armor_type in armor_types:
     armor_list[armor_type] = '\n'.join(armor_list[armor_type])
     metal_armor_list[armor_type] = '\n'.join(metal_armor_list[armor_type])
@@ -107,18 +118,56 @@ def armor(raw):
       .replace('<boots>', metal_armor_list['boots'])
     )
 
+def consumable(raw):
+  items = [{'name': x[0], 'id': x[1].lower(), 'temperature': x[2], 'duration': x[3], 'type': x[4], 'temp_type': x[5], 'potion': x[6], 'nbt': x[7]} for x in raw]
+  item_types = {i: [j for j in items if j['type'] == i] for i in set([x['type'] for x in items])} #{x['type']: [y for y in items if y['type'] is x['type']] for x in items}
+
+  scoreboard_lists = []
+  consumable_lists = []
+
+  for item_type in item_types:
+    if len(item_type) > 9:
+      print('[' + item_type + ']', 'is too long!')
+      item_type = item_type[0:9]
+    scoreboard_lists.append('\n'.join(command['functions']['temp_calculation']['consumable']['scoreboard']).replace('<item_type>', item_type))
+    consumable_lists.append('\n'.join(command['functions']['temp_calculation']['temp_source']['consumable']).replace('<item_type>', item_type))
+    
+    for item in item_types[item_type]:
+      consumable_item = ',\n\t\t\t\t\t'.join([command['advancements']['consumable']['normal']] + [command['advancements']['consumable'][x] for x in item if x in command['advancements']['consumable'] and item[x].replace(' ', '') is not ''])
+      consumable_item = consumable_item.replace('<id>', item['id']).replace('<nbt>', item['nbt']).replace('<potion>', item['potion'])
+      with create_file('./output/advancements/consumable/' + item_type + '/' + '/'.join(item['id'].split(':')) + '.json') as f:
+        f.write(generator['advancements']['consumable']['item']
+        .replace('<consumable_item>', consumable_item)
+        .replace('<consumable_location>', item_type + '/' + '/'.join(item['id'].split(':'))))
+
+      with create_file('./output/functions/temp_calculation/consumable/' + item_type + '/' + '/'.join(item['id'].split(':')) + '.mcfunction') as f:
+        f.write(generator['functions']['temp_calculation']['consumable']['item']
+        .replace('<item_type>', item_type)
+        .replace('<item_temperature>', item['temperature'])
+        .replace('<item_time>', item['duration'])
+        .replace('<temperature_type>', '>' if item['temp_type'] == 'highest' else '<'))
+
+  with create_file('./output/functions/temp_calculation/consumable/scoreboard.mcfunction') as f:
+    f.write('\n'.join(scoreboard_lists))
+  with create_file('./output/functions/temp_calculation/temp_source/consumable.mcfunction') as f:
+    f.write('\n'.join(consumable_lists))
+
 # Main function
 def generate():
+
+  current_spreadsheet = getSheet('temperature_sheet') 
   data = {
-    'biome': getSheet('temperature_sheet', 'Biome Temperature', 2),
-    'base_temp': getSheet('temperature_sheet', 'Base Temperature', 2),
+    'biome': getWorksheet(current_spreadsheet, 'Biome Temperature', 2),
+    'base_temp': getWorksheet(current_spreadsheet, 'Base Temperature', 2),
     'armors': {
-      'armor': getSheet('temperature_sheet', 'Armor Temperature', 1),
-      'metal_armor': getSheet('temperature_sheet', 'Metal Armor Temperature', 1)
-    }
+      'armor': getWorksheet(current_spreadsheet, 'Armor Temperature', 1),
+      'metal_armor': getWorksheet(current_spreadsheet, 'Metal Armor Temperature', 1)
+    },
+    'consumable': getWorksheet(current_spreadsheet, 'Consumable Items', 1)
   }
   biomes(data['biome'], data['base_temp'])
   armor(data['armors'])
+  consumable(data['consumable'])
   print('Program run successfully!')
 
 generate()
