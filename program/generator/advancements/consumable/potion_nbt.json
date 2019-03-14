@@ -1,0 +1,18 @@
+{
+	"criteria": {
+		"<name>": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "<id>",
+					"nbt": "<nbt>",
+					"potion": "<potion>"
+				}
+			}
+		}
+	},
+	"parent": "<namespace>:consumable/root",
+	"rewards": {
+		"function": "<namespace>:temp_calculation/consumable/<type>/<name>"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"functions": {
+		"temp_calculation": {
+			"temp_source": {
+				"armor": {
+					"armor": {
+						"helmet": "execute as @s if entity @s[nbt={Inventory:[{Slot:103b,id:\"<id>\"}]}] run scoreboard players set #player.armorTemp4 bb.variable <temperature>",
+						"chestplate": "execute as @s if entity @s[nbt={Inventory:[{Slot:102b,id:\"<id>\"}]}] run scoreboard players set #player.armorTemp3 bb.variable <temperature>",
+						"leggings": "execute as @s if entity @s[nbt={Inventory:[{Slot:101b,id:\"<id>\"}]}] run scoreboard players set #player.armorTemp2 bb.variable <temperature>",
+						"boots": "execute as @s if entity @s[nbt={Inventory:[{Slot:100b,id:\"<id>\"}]}] run scoreboard players set #player.armorTemp1 bb.variable <temperature>"
+					},
+					"metal_armor": {
+						"helmet": "execute as @s if score @s tmp.totalTemp matches <temperature_range> if entity @s[nbt={Inventory:[{Slot:103b, id:\"<id>\"}]}] run scoreboard players set #player.armorTemp4 bb.variable <temperature>",
+						"chestplate": "execute as @s if score @s tmp.totalTemp matches <temperature_range> if entity @s[nbt={Inventory:[{Slot:102b, id:\"<id>\"}]}] run scoreboard players set #player.armorTemp3 bb.variable <temperature>",
+						"leggings": "execute as @s if score @s tmp.totalTemp matches <temperature_range> if entity @s[nbt={Inventory:[{Slot:101b, id:\"<id>\"}]}] run scoreboard players set #player.armorTemp2 bb.variable <temperature>",
+						"boots": "execute as @s if score @s tmp.totalTemp matches <temperature_range> if entity @s[nbt={Inventory:[{Slot:100b, id:\"<id>\"}]}] run scoreboard players set #player.armorTemp1 bb.variable <temperature>"
+					}
+				}
+			}
+		}
+	}
+}
