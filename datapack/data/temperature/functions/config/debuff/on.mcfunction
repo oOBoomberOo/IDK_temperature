@@ -1,2 +1,0 @@
-scoreboard players set #debuff_gamerule tmp.variable 1
-tellraw @a [{"text":"[","color":"gold","bold":"true"},{"text":"Temperature","color":"yellow","bold":"true"},{"text":"] ","color":"gold","bold":"true"},{"text":"Debuffs Enabled","color":"green"}]

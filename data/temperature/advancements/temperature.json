@@ -1,0 +1,18 @@
+{
+	"display": {
+		"title": "Temperature",
+		"description": "",
+		"icon": {
+			"item": "minecraft:clock"
+		},
+		"announce_to_chat": false,
+		"show_toast": false
+	},
+	"parent": "global:cat",
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	
+	}
+}

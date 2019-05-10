@@ -1,1 +1,0 @@
-scoreboard players operation #player.totalTemp tmp.variable += @s tmp.tempBiome

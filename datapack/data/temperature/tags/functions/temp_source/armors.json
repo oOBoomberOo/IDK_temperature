@@ -1,8 +1,0 @@
-{
-  "values": [
-    "temperature:temp_calculation/temp_source/armor/armor",
-    "temperature:temp_calculation/temp_source/armor/metal_armor",
-    "temperature:temp_calculation/temp_source/armor/sp_armor",
-    "temperature:temp_calculation/temp_source/armor/armor_modifier"
-  ]
-}

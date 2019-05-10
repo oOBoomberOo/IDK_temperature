@@ -1,1 +1,0 @@
-execute as @s[scores={tmp.playerTemp=115..}] run advancement grant @s only temperature:temperature/hottie
