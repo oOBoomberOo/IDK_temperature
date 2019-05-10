@@ -1,0 +1,18 @@
+{
+	"display": {
+		"title": "Chuckchuk",
+		"description": "<Insert Role>",
+		"icon": {
+			"item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Name: \"Chuckchuk\", Properties: {textures: [{Value: \"eyJ0aW1lc3RhbXAiOjE1NTc1MTcxNzE2NTIsInByb2ZpbGVJZCI6IjU5NTdhODY4Njc3MzRiM2Y5ZTVkMDlhNTk2NDU0N2U4IiwicHJvZmlsZU5hbWUiOiJDaHVja2NodWsiLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmZkM2VkZmYzMWI2MWY0N2Q1MTdlMzY2Mjk3N2U3YjUzOWI2ZDhlZjgwYjkwNmE5MjkzODExMTc4OTBjMmVlYSJ9fX0=\"}]}}}"
+	 	},
+		"announce_to_chat": false,
+		"show_toast": false
+	},
+	"parent": "temperature:temperature",
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

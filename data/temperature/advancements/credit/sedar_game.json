@@ -1,0 +1,18 @@
+{
+	"display": {
+		"title": "SedarGames",
+		"description": "<Insert Role>",
+		"icon": {
+			"item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Name: \"SedarGames\", Properties: {textures: [{Value: \"eyJ0aW1lc3RhbXAiOjE1NTc1MTcyMDQ4MDQsInByb2ZpbGVJZCI6IjBiNTVlNzc5NTEwNjQ0MzBiYzlmYTg0MWQ4MTg4OGQ0IiwicHJvZmlsZU5hbWUiOiJTZWRhckdhbWVzIiwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzRmYzY5NTc2OWM2MTJhNzM4NDFhMDc1OWU2MjU5ZTMyNmMwMzczNDRkZmZkMGI0MDBlZjhiYTkyNTM4MTEzMmEifX19\"}]}}}"
+	 	},
+		"announce_to_chat": false,
+		"show_toast": false
+	},
+	"parent": "temperature:credit/chuckchuk",
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:item",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": [
+								{"text": "Thermometer", "color": "yellow"}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{ucit: {id: \"thermometer\", from: \"cat:temperature\"}}"
+						}
+					],
+					"name": "minecraft:clock"
+				}
+			]
+		}
+	]
+}
