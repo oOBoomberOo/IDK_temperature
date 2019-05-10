@@ -3,7 +3,7 @@
 		"title": "C.A.T",
 		"description": "",
 		"icon": {
-			"item": "minecraft:cod"
+			"item": "minecraft:cod_bucket"
 		},
 		"announce_to_chat": false,
 		"show_toast": false
