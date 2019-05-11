@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"lukewarm_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "lukewarm_ocean"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/lukewarm_ocean"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"frozen_river": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "frozen_river"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/frozen_river"
+	}
+}

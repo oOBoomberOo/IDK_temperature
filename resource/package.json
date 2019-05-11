@@ -1,0 +1,15 @@
+{
+  "name": "temperature_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generator.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Boomber",
+  "license": "MIT",
+  "dependencies": {
+    "del": "^4.1.1",
+    "mkdirp": "^0.5.1"
+  }
+}

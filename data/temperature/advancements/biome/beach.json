@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"beach": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "beach"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/beach"
+	}
+}

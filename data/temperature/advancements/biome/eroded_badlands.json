@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"eroded_badlands": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "eroded_badlands"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/eroded_badlands"
+	}
+}

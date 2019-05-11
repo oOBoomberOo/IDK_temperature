@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"jungle_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "jungle_hills"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/jungle_hills"
+	}
+}

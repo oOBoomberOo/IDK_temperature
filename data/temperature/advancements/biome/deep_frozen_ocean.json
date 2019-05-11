@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"deep_frozen_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "deep_frozen_ocean"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/deep_frozen_ocean"
+	}
+}

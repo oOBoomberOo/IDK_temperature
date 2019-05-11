@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"savanna_plateau": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "savanna_plateau"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/savanna_plateau"
+	}
+}

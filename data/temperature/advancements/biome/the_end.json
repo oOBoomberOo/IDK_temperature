@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"the_end": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "the_end"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/the_end"
+	}
+}

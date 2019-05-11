@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"desert_lakes": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "desert_lakes"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/desert_lakes"
+	}
+}

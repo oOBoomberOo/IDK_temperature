@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"mountains": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "mountains"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/mountains"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"savanna": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "savanna"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/savanna"
+	}
+}

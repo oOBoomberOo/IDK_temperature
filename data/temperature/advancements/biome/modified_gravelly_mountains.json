@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"modified_gravelly_mountains": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "modified_gravelly_mountains"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/modified_gravelly_mountains"
+	}
+}

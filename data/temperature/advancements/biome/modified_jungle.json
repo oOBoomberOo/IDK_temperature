@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"modified_jungle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "modified_jungle"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/modified_jungle"
+	}
+}

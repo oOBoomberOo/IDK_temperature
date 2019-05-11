@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"deep_warm_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "deep_warm_ocean"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/deep_warm_ocean"
+	}
+}

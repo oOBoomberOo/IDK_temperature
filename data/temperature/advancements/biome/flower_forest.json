@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"flower_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "flower_forest"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/flower_forest"
+	}
+}

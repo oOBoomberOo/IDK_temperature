@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"frozen_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "frozen_ocean"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/frozen_ocean"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"mountain_edge": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "mountain_edge"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/mountain_edge"
+	}
+}

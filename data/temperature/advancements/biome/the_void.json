@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"the_void": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "the_void"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/the_void"
+	}
+}

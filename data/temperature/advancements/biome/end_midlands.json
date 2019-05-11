@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"end_midlands": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "end_midlands"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/end_midlands"
+	}
+}

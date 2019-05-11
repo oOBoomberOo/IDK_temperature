@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"jungle_edge": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "jungle_edge"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/jungle_edge"
+	}
+}

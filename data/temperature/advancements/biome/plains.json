@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"plains": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "plains"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/plains"
+	}
+}

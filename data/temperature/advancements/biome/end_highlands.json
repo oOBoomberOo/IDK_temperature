@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"end_highlands": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "end_highlands"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/end_highlands"
+	}
+}

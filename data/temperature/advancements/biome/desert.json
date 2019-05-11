@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"desert": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "desert"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/desert"
+	}
+}

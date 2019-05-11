@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"birch_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "birch_forest"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/birch_forest"
+	}
+}

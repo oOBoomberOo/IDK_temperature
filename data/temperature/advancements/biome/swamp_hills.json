@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"swamp_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "swamp_hills"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/swamp_hills"
+	}
+}

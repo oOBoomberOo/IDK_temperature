@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"river": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "river"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/river"
+	}
+}

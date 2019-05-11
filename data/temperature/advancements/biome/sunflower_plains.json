@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"sunflower_plains": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "sunflower_plains"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/sunflower_plains"
+	}
+}

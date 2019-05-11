@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"tall_birch_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "tall_birch_hills"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/tall_birch_hills"
+	}
+}

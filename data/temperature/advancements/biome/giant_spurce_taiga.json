@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"giant_spurce_taiga": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "giant_spurce_taiga"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/giant_spurce_taiga"
+	}
+}

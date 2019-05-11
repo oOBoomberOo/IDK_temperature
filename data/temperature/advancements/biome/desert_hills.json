@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"desert_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "desert_hills"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/desert_hills"
+	}
+}

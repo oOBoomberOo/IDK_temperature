@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"snowy_tundra": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "snowy_tundra"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/snowy_tundra"
+	}
+}

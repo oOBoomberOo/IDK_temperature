@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"taiga": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "taiga"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/taiga"
+	}
+}

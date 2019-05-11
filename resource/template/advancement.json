@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"<biome>": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "<biome>"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/<biome>"
+	}
+}

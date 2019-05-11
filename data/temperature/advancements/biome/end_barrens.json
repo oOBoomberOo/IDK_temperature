@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"end_barrens": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "end_barrens"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/end_barrens"
+	}
+}

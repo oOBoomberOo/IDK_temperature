@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"mushroom_field_shore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "mushroom_field_shore"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/mushroom_field_shore"
+	}
+}

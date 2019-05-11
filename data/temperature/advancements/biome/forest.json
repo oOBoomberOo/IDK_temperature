@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "forest"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/forest"
+	}
+}

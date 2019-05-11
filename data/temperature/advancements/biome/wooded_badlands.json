@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"wooded_badlands": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "wooded_badlands"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/wooded_badlands"
+	}
+}

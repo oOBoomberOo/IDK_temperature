@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"bamboo_jungle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "bamboo_jungle"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/bamboo_jungle"
+	}
+}

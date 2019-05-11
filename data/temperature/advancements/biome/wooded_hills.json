@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"wooded_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "wooded_hills"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/wooded_hills"
+	}
+}

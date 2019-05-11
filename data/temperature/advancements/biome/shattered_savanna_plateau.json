@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"shattered_savanna_plateau": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "shattered_savanna_plateau"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/shattered_savanna_plateau"
+	}
+}

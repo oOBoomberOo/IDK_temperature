@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"stone_shore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "stone_shore"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/stone_shore"
+	}
+}

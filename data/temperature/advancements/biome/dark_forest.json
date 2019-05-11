@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"dark_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "dark_forest"
+			}
+		}
+	},
+	"parent": "temperature:biome/root",
+	"rewards": {
+		"function": "temperature:biome/dark_forest"
+	}
+}
