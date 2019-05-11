@@ -1,0 +1,2 @@
+execute if score @s cat.totalTemp matches ..30000 if score @s cat.thTimer >= #cat.eff.time.cold₁ bb.config run tag @s add cat.effect.cold_1
+execute if score @s cat.totalTemp matches ..15000 if score @s cat.thTimer >= #cat.eff.time.cold₂ bb.config run tag @s add cat.effect.cold_2

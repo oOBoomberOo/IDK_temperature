@@ -5,3 +5,5 @@ execute as @a[tag=!cat.temperature.ignore] unless score @s cat.totalTemp matches
 
 # Updating temperature
 execute as @a[tag=!cat.temperature.ignore] at @s run function temperature:engine/main
+
+function temperature:query/main

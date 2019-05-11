@@ -1,1 +1,1 @@
-execute if score @s cat.thTimer matches ..2147483646 scoreboard players add @s cat.thTimer 1
+execute if score @s cat.thTimer matches ..2147483646 run scoreboard players add @s cat.thTimer 1

@@ -1,0 +1,2 @@
+execute if score cat.query.time cat.query matches 0..500 run function temperature:engine/get/time/day
+execute if score cat.query.time cat.query matches 500..1000 run function temperature:engine/get/time/night
