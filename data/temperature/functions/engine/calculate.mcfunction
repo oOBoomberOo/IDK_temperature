@@ -14,7 +14,7 @@ scoreboard players operation #-cat.temp.factor bb.calculation = #+cat.temp.facto
 scoreboard players operation #-cat.temp.factor bb.calculation *= #-1 bb.variable
 
 # -f < -t && t < f -> Tᵣ = Tᵢ - t
-execute if score #-cat.temp.factor bb.calculation < #-cat.totalTemp bb.calculation if score #cat.totalTemp bb.calculation < #+cat.temp.factor bb.calculation run scoreboard players operation @s cat.totalTemp -= #cat.totalTemp bb.calculation
+execute if score #-cat.temp.factor bb.calculation < #cat.totalTemp bb.calculation if score #cat.totalTemp bb.calculation < #+cat.temp.factor bb.calculation run scoreboard players operation @s cat.totalTemp -= #cat.totalTemp bb.calculation
 
 # t <= -f -> Tᵣ = Tᵢ + f
 execute if score #cat.totalTemp bb.calculation <= #-cat.temp.factor bb.calculation run scoreboard players operation @s cat.totalTemp += #cat.temp.factor bb.config

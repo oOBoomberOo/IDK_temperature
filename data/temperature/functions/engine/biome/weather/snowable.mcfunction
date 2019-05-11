@@ -1,0 +1,1 @@
+scoreboard players operation #cat.biome.weather.🐢 bb.variable = #cat.biome.weather.snow bb.config

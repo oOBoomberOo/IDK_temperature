@@ -1,14 +1,14 @@
 {
 	"criteria": {
-		"giant_spurce_taiga_hills": {
+		"giant_spruce_taiga_hills": {
 			"trigger": "minecraft:location",
 			"conditions": {
-				"biome": "giant_spurce_taiga_hills"
+				"biome": "giant_spruce_taiga_hills"
 			}
 		}
 	},
 	"parent": "temperature:biome/root",
 	"rewards": {
-		"function": "temperature:biome/giant_spurce_taiga_hills"
+		"function": "temperature:biome/giant_spruce_taiga_hills"
 	}
 }

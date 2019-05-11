@@ -1,14 +1,14 @@
 {
 	"criteria": {
-		"giant_spurce_taiga": {
+		"badlands_plateau": {
 			"trigger": "minecraft:location",
 			"conditions": {
-				"biome": "giant_spurce_taiga"
+				"biome": "badlands_plateau"
 			}
 		}
 	},
 	"parent": "temperature:biome/root",
 	"rewards": {
-		"function": "temperature:biome/giant_spurce_taiga"
+		"function": "temperature:biome/badlands_plateau"
 	}
 }

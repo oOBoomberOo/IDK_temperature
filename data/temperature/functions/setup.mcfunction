@@ -19,10 +19,14 @@ scoreboard objectives add cat.thTempLvl dummy
 scoreboard objectives add cat.query dummy
 
 scoreboard objectives add cat.biomeTemp dummy
+scoreboard objectives add cat.timeMult dummy
 scoreboard objectives add cat.biomeID dummy
 scoreboard objectives add cat.prevID dummy
 
+#scoreboard objectives add cat.death dummy
+
 scoreboard players set #-1 bb.variable -1
+scoreboard players set #2 bb.variable 2
 scoreboard players set #10 bb.variable 10
 scoreboard players set #100 bb.variable 100
 scoreboard players set #1000 bb.variable 1000

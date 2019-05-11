@@ -1,5 +1,5 @@
 # Set base score for "targetTemp" & "timerTemp"
-scoreboard players operation @s cat.targetTemp = #cat.temp.target bb.config
+scoreboard players operation @s cat.targetTemp = #cat.temp.start bb.config
 scoreboard players operation @s cat.timerTemp = #cat.timer bb.config
 
 execute as @s run function temperature:engine/get
@@ -12,7 +12,7 @@ scoreboard players operation #cat.timer.local bb.variable %= @s cat.timerTemp
 execute if score #cat.timer.local bb.variable matches 0 run function temperature:engine/calculate
 
 execute as @s run function temperature:threshold/main
-execute as @s run function temperature:effect/main
+#execute as @s run function temperature:effect/main
 
 # Handling display message
 execute as @s run function temperature:display/main

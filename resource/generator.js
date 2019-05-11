@@ -16,6 +16,7 @@ let mkdir = promisify(mkdirp);
 load();
 
 async function load() {
+	const d1 = new Date();
 	console.log('Start generating files');
 	let result_adv = readFile(template_advancement).catch(() => '');
 	let result_fun = readFile(template_function).catch(() => '');
@@ -32,17 +33,21 @@ async function load() {
 
 	let promises = [];
 	for (let biome of biomes) {
-		let {uid, id, temperature} = biome;
+		let {uid, id, temperature, time_multiplier} = biome;
 		let out_adv = path.join(working_directory, 'advancements', `${id}.json`);
 		let out_fun = path.join(working_directory, 'functions', `${id}.mcfunction`);
 		
 		let write_adv = result_adv.replace(/<biome>/g, id);
-		let write_fun = result_fun.replace('<uid>', uid).replace('<temperature>', Math.floor(temperature * 1000));
+		let write_fun = result_fun
+			.replace('<uid>', uid)
+			.replace('<temperature>', Math.floor(temperature * 1000))
+			.replace('<multiplier>', Math.floor(time_multiplier * 1000))
 
 		promises.push(writeFile(out_adv, write_adv, {flag: 'w'}));
 		promises.push(writeFile(out_fun, write_fun, {flag: 'w'}));
 	}
 
 	await Promise.all(promises);
-	console.log(`Finished generating ${promises.length} files`);
+	const d2 = new Date();
+	console.log(`Finished generating ${promises.length} files [${d2 - d1}ms]`);
 }

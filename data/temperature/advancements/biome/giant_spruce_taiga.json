@@ -1,14 +1,14 @@
 {
 	"criteria": {
-		"wooded_badlands": {
+		"giant_spruce_taiga": {
 			"trigger": "minecraft:location",
 			"conditions": {
-				"biome": "wooded_badlands"
+				"biome": "giant_spruce_taiga"
 			}
 		}
 	},
 	"parent": "temperature:biome/root",
 	"rewards": {
-		"function": "temperature:biome/wooded_badlands"
+		"function": "temperature:biome/giant_spruce_taiga"
 	}
 }
