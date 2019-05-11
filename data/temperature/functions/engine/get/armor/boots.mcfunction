@@ -1,0 +1,2 @@
+execute if entity @s[nbt={ArmorItems:[{}, {}, {}, {id: "minecraft:diamond_boots"}]}] run scoreboard players remove #cat.calculated.temp bb.variable 2
+execute if entity @s[nbt={ArmorItems:[{}, {}, {}, {id: "minecraft:diamond_boots"}]}] run scoreboard players remove #cat.calculated.timer bb.variable 1

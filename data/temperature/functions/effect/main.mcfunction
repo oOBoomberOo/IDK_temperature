@@ -1,0 +1,2 @@
+execute if score @s cat.totalTemp matches ..30 if score @s cat.thTimer >= #cat.eff.time.cold₁ bb.config run function temperature:effect/list/cold_1
+execute if score @s cat.totalTemp matches ..15 if score @s cat.thTimer >= #cat.eff.time.cold₂ bb.config run function temperature:effect/list/cold_2
