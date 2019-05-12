@@ -29,7 +29,7 @@ async function biome() {
 	await mkdir(fun_path);
 
 	let result_adv = readFile('template/biome/advancement.json').catch(() => '');
-	let result_fun = readFile('template/biome/function.json').catch(() => '');
+	let result_fun = readFile('template/biome/function.mcfunction').catch(() => '');
 	let result = await readFile('biome.json').catch(() => '{}');
 	let parsed = JSON.parse(result);
 	let biomes = parsed.biome;
@@ -82,7 +82,7 @@ async function block() {
 	file_block = files[0].toString();
 	file_blocks = files[1].toString();
 
-	const block_template = `if block ~<x> ~<y> ~<z> <id> run scoreboard players add #cat.block.count bb.variable 1`;
+	const block_template = `execute if block ~<x> ~<y> ~<z> <id> run scoreboard players add #cat.block.count bb.variable 1`;
 
 	let promises = [];
 	for (let block of blocks) {

@@ -43,3 +43,7 @@ scoreboard players set #cat.biome.weather.snow bb.config 250
 
 scoreboard players set #cat.biome.weather.snowable bb.config 150
 scoreboard players set #cat.biome.weather.rainable bb.config 950
+
+
+scoreboard players set #cat.block.ice.temp bb.config -4
+scoreboard players set #cat.block.ice.timer bb.config 0

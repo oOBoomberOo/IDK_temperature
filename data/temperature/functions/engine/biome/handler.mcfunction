@@ -1,3 +1,4 @@
+# If current biome id is not the same as current ID update ID scoreboard 
 execute unless score #cat.biome.uid bb.variable = @s cat.biomeID run function temperature:engine/biome/update_biome
 
 function temperature:engine/biome/altitude

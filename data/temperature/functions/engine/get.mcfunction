@@ -1,10 +1,13 @@
 function temperature:engine/get/armor
 function temperature:engine/get/add
 
+function temperature:engine/get/biome
+function temperature:engine/get/add
+
 function temperature:engine/get/time
 function temperature:engine/get/add
 
-function temperature:engine/get/biome
+function temperature:engine/get/blocks
 function temperature:engine/get/add
 
 # Debugging purpose
