@@ -1,8 +1,8 @@
 # Set base score for "targetTemp" & "timerTemp"
-scoreboard players operation @s cat.targetTemp = #cat.temp.start bb.config
-scoreboard players operation @s cat.timerTemp = #cat.timer bb.config
+scoreboard players operation #cat.timer.local bb.variable = #cat.timer bb.variable
+scoreboard players operation #cat.timer.local bb.variable %= #cat.init.update bb.config
 
-execute as @s run function temperature:engine/get
+execute if score #cat.timer.local bb.variable matches 0 as @s run function temperature:engine/get
 
 # Use "mod" operation to dynamically detect time frame
 scoreboard players operation #cat.timer.local bb.variable = #cat.timer bb.variable

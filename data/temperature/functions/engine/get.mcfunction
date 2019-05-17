@@ -1,3 +1,6 @@
+scoreboard players operation @s cat.targetTemp = #cat.init.target bb.config
+scoreboard players operation @s cat.timerTemp = #cat.init.timer bb.config
+
 function temperature:engine/get/armor
 function temperature:engine/get/add
 
