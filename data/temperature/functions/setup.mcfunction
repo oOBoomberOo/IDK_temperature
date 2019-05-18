@@ -23,6 +23,9 @@ scoreboard objectives add cat.timeMult dummy
 scoreboard objectives add cat.biomeID dummy
 scoreboard objectives add cat.prevID dummy
 
+# UID system
+scoreboard objectives add cat.uid dummy
+
 #scoreboard objectives add cat.death dummy
 
 scoreboard players set #-1 bb.variable -1
@@ -34,5 +37,7 @@ scoreboard players set #10000 bb.variable 10000
 scoreboard players set #100000 bb.variable 100000
 
 scoreboard players set #cat.timer bb.variable 0
+
+execute unless score #cat.current_id cat.uid matches -2147483648..2147483647 run scoreboard players set #cat.current_id cat.uid 0
 
 function temperature:config

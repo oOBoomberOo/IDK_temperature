@@ -2,7 +2,7 @@
   "name": "temperature_generator",
   "version": "1.0.0",
   "description": "",
-  "main": "generator.js",
+  "main": "generator/generator.js",
   "scripts": {
     "start": "node ."
   },

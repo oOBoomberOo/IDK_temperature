@@ -1,0 +1,30 @@
+{
+	"armor": {
+		"helmet": [
+			{"id": "minecraft:diamond_helmet", "temp": 10.0, "time": 0}
+		],
+		"chestplate": [
+			{"id": "minecraft:diamond_chestplate", "temp": 10.0, "time": 0}
+		],
+		"leggings": [
+			{"id": "minecraft:diamond_leggings", "temp": 10.0, "time": 0}
+		],
+		"boots": [
+			{"id": "minecraft:diamond_boots", "temp": 10.0, "time": 0}
+		]
+	},
+	"enchantment": {
+		"helmet": [
+			{"id": "minecraft:fire_protection", "temp": -10.0, "when": {"operator": ">", "temp": "60.0"}}
+		],
+		"chestplate": [
+			{"id": "minecraft:fire_protection", "temp": -10.0, "when": {"operator": ">", "temp": "60.0"}}
+		],
+		"leggings": [
+			{"id": "minecraft:fire_protection", "temp": -10.0, "when": {"operator": ">", "temp": "60.0"}}
+		],
+		"boots": [
+			{"id": "minecraft:fire_protection", "temp": -10.0, "when": {"operator": ">", "temp": "60.0"}}
+		]
+	}
+}
